@@ -1,0 +1,22 @@
+# Data from the world. Each dataset: its file and checksum; whether it is a placeholder, what it
+# stands in for and how it was made; its role (consistency, estimate, correspondence, witness);
+# the claims or readings it bears on; the premises it adds; the equations that carry it into the
+# paper's quantities; and its columns. A placeholder blocks every release.
+
+- key: entanglement_profile
+  title: "Measured entanglement-Hamiltonian weights of a subsystem at the end of a 51-ion chain, bond by bond"
+  file: data/external/entanglement_profile.csv
+  sha256: e6b69c3270e575c0943a18bd4b22ccc6be45f2f36970163e9fe10a9686627579
+  source: JoshiEtAl2023
+  licence: CC-BY-4.0
+  made_from: "the archive at Zenodo, doi:10.5281/zenodo.8279583, file AnalyzedData/Figure2/GroundStateBetas.mat, variable dataedges, its largest entry: the ground state of the XXZ chain at Delta = 1, subsystem from ion 37 to the chain's end at ion 50. The published first row, the cut, where the weight is pinned to zero with no error, is left out; every other value is as published."
+  role: [correspondence]
+  bears_on: [Tolman temperature, horizon]
+  premises: [subsystem]
+  transform: [eq:entanglement]
+  columns:
+    term: "XXZ for the bond term the weight multiplies"
+    position: "the ion index the published table gives the term"
+    distance: "its distance in sites from the cut that bounds the subsystem"
+    weight: "the learned inverse temperature on the term"
+    uncertainty: "its published standard error"

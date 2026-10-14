@@ -1,0 +1,1222 @@
+{
+  "bellLocal": {
+    "kind": "exact",
+    "text": "2",
+    "tex": "2"
+  },
+  "bellQuantum": {
+    "kind": "measured",
+    "text": "2.82843",
+    "tex": "2.82843"
+  },
+  "bumpCellsFirst": {
+    "kind": "exact",
+    "text": "300",
+    "tex": "300"
+  },
+  "bumpCellsLast": {
+    "kind": "exact",
+    "text": "600",
+    "tex": "600"
+  },
+  "bumpCellsPower": {
+    "kind": "measured",
+    "text": "0.51",
+    "tex": "0.51"
+  },
+  "bumpCurvatureFirst": {
+    "kind": "measured",
+    "text": "0.0026",
+    "tex": "0.0026"
+  },
+  "bumpCurvatureLast": {
+    "kind": "measured",
+    "text": "6.7 × 10⁻⁴",
+    "tex": "6.7\\times10^{-4}"
+  },
+  "bumpEntropyBound": {
+    "kind": "bound",
+    "text": "10⁻⁴",
+    "tex": "10^{-4}"
+  },
+  "bumpEpsFirst": {
+    "kind": "input",
+    "text": "10⁻⁵",
+    "tex": "10^{-5}"
+  },
+  "bumpEpsLast": {
+    "kind": "input",
+    "text": "10⁻⁶",
+    "tex": "10^{-6}"
+  },
+  "bumpEpsPower": {
+    "kind": "measured",
+    "text": "−0.23",
+    "tex": "-0.23"
+  },
+  "bumpFitCount": {
+    "kind": "exact",
+    "text": "4",
+    "tex": "4"
+  },
+  "bumpFlatFirst": {
+    "kind": "measured",
+    "text": "1.4 × 10⁻⁶",
+    "tex": "1.4\\times10^{-6}"
+  },
+  "bumpFlatLast": {
+    "kind": "measured",
+    "text": "2.0 × 10⁻⁷",
+    "tex": "2.0\\times10^{-7}"
+  },
+  "bumpFlatPower": {
+    "kind": "measured",
+    "text": "2.8",
+    "tex": "2.8"
+  },
+  "bumpGapBound": {
+    "kind": "bound",
+    "text": "10⁻¹¹",
+    "tex": "10^{-11}"
+  },
+  "bumpGentleResponse": {
+    "kind": "measured",
+    "text": "1.1",
+    "tex": "1.1"
+  },
+  "bumpGentleShareLeast": {
+    "kind": "measured",
+    "text": "0.46",
+    "tex": "0.46"
+  },
+  "bumpGentleShareMost": {
+    "kind": "measured",
+    "text": "0.48",
+    "tex": "0.48"
+  },
+  "bumpLevelLast": {
+    "kind": "input",
+    "text": "0.25",
+    "tex": "0.25"
+  },
+  "bumpPacket": {
+    "kind": "input",
+    "text": "20",
+    "tex": "20"
+  },
+  "bumpPowerHigh": {
+    "kind": "measured",
+    "text": "1.000",
+    "tex": "1.000"
+  },
+  "bumpPowerLow": {
+    "kind": "measured",
+    "text": "0.9994",
+    "tex": "0.9994"
+  },
+  "bumpResponse": {
+    "kind": "input",
+    "text": "3",
+    "tex": "3"
+  },
+  "bumpScaleLeast": {
+    "kind": "measured",
+    "text": "0.34",
+    "tex": "0.34"
+  },
+  "bumpScaleMost": {
+    "kind": "measured",
+    "text": "0.37",
+    "tex": "0.37"
+  },
+  "bumpSweepCellsLeast": {
+    "kind": "exact",
+    "text": "150",
+    "tex": "150"
+  },
+  "bumpSweepCellsMost": {
+    "kind": "exact",
+    "text": "600",
+    "tex": "600"
+  },
+  "bumpSweepCount": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "bumpSweepEpsLeast": {
+    "kind": "input",
+    "text": "10⁻⁶",
+    "tex": "10^{-6}"
+  },
+  "bumpSweepEpsMost": {
+    "kind": "input",
+    "text": "10⁻⁴",
+    "tex": "10^{-4}"
+  },
+  "bumpSweepGapBound": {
+    "kind": "bound",
+    "text": "10⁻⁶",
+    "tex": "10^{-6}"
+  },
+  "bumpWaveBound": {
+    "kind": "bound",
+    "text": "0.003",
+    "tex": "0.003"
+  },
+  "bumpWidthFirst": {
+    "kind": "exact",
+    "text": "114",
+    "tex": "114"
+  },
+  "bumpWidthLast": {
+    "kind": "exact",
+    "text": "264",
+    "tex": "264"
+  },
+  "catalogueBelowMargin": {
+    "kind": "input",
+    "text": "0.001",
+    "tex": "0.001"
+  },
+  "catalogueBelowPlaces": {
+    "kind": "exact",
+    "text": "56",
+    "tex": "56"
+  },
+  "catalogueDeepDepth": {
+    "kind": "input",
+    "text": "2.0",
+    "tex": "2.0"
+  },
+  "catalogueFamilies": {
+    "kind": "exact",
+    "text": "3",
+    "tex": "3"
+  },
+  "catalogueGapBound": {
+    "kind": "bound",
+    "text": "10⁻⁷",
+    "tex": "10^{-7}"
+  },
+  "catalogueIsingDropped": {
+    "kind": "exact",
+    "text": "57",
+    "tex": "57"
+  },
+  "catalogueIsingModels": {
+    "kind": "exact",
+    "text": "57",
+    "tex": "57"
+  },
+  "catalogueKeptLargest": {
+    "kind": "measured",
+    "text": "0.073",
+    "tex": "0.073"
+  },
+  "catalogueLargest": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "catalogueLattices": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "catalogueModels": {
+    "kind": "exact",
+    "text": "120",
+    "tex": "120"
+  },
+  "catalogueNoWeightBound": {
+    "kind": "bound",
+    "text": "10⁻⁵",
+    "tex": "10^{-5}"
+  },
+  "catalogueOtherDropped": {
+    "kind": "exact",
+    "text": "22",
+    "tex": "22"
+  },
+  "catalogueOtherModels": {
+    "kind": "exact",
+    "text": "35",
+    "tex": "35"
+  },
+  "catalogueSeedFirst": {
+    "kind": "exact",
+    "text": "0",
+    "tex": "0"
+  },
+  "catalogueSeedLast": {
+    "kind": "exact",
+    "text": "2",
+    "tex": "2"
+  },
+  "catalogueUniformRings": {
+    "kind": "exact",
+    "text": "48",
+    "tex": "48"
+  },
+  "clockRateGapBound": {
+    "kind": "bound",
+    "text": "10⁻⁹",
+    "tex": "10^{-9}"
+  },
+  "coldestCells": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "coldestChainCells": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "coldestChainFirstEnd": {
+    "kind": "measured",
+    "text": "0.218",
+    "tex": "0.218"
+  },
+  "coldestChainLastEnd": {
+    "kind": "measured",
+    "text": "0.405",
+    "tex": "0.405"
+  },
+  "coldestDepth": {
+    "kind": "input",
+    "text": "0.2",
+    "tex": "0.2"
+  },
+  "coldestFirstDistance": {
+    "kind": "measured",
+    "text": "0.14",
+    "tex": "0.14"
+  },
+  "coldestFirstGap": {
+    "kind": "input",
+    "text": "0.3",
+    "tex": "0.3"
+  },
+  "coldestFirstTotal": {
+    "kind": "measured",
+    "text": "4.1",
+    "tex": "4.1"
+  },
+  "coldestLastDistance": {
+    "kind": "measured",
+    "text": "0.022",
+    "tex": "0.022"
+  },
+  "coldestLastGap": {
+    "kind": "input",
+    "text": "0.001",
+    "tex": "0.001"
+  },
+  "coldestLastTotal": {
+    "kind": "measured",
+    "text": "1.2 × 10²",
+    "tex": "1.2\\times10^{2}"
+  },
+  "constraintAtLevelBound": {
+    "kind": "bound",
+    "text": "10⁻⁴",
+    "tex": "10^{-4}"
+  },
+  "criticalChargeEntropy": {
+    "kind": "measured",
+    "text": "0.5003",
+    "tex": "0.5003"
+  },
+  "criticalChargeGapBound": {
+    "kind": "bound",
+    "text": "0.001",
+    "tex": "0.001"
+  },
+  "criticalChargeSize": {
+    "kind": "measured",
+    "text": "0.5000",
+    "tex": "0.5000"
+  },
+  "criticalLongest": {
+    "kind": "exact",
+    "text": "30",
+    "tex": "30"
+  },
+  "criticalPerPlace": {
+    "kind": "measured",
+    "text": "−1.27324",
+    "tex": "-1.27324"
+  },
+  "criticalShortest": {
+    "kind": "exact",
+    "text": "3",
+    "tex": "3"
+  },
+  "criticalSizeFirst": {
+    "kind": "exact",
+    "text": "8",
+    "tex": "8"
+  },
+  "criticalSizeLast": {
+    "kind": "exact",
+    "text": "60",
+    "tex": "60"
+  },
+  "criticalSpeed": {
+    "kind": "measured",
+    "text": "2.000",
+    "tex": "2.000"
+  },
+  "deepCellMargin": {
+    "kind": "measured",
+    "text": "0.167",
+    "tex": "0.167"
+  },
+  "deepCellMarginMost": {
+    "kind": "measured",
+    "text": "0.569",
+    "tex": "0.569"
+  },
+  "deepClockShallow": {
+    "kind": "measured",
+    "text": "0.015",
+    "tex": "0.015"
+  },
+  "deepDepth": {
+    "kind": "input",
+    "text": "1.0",
+    "tex": "1.0"
+  },
+  "deepHotRatio": {
+    "kind": "measured",
+    "text": "11",
+    "tex": "11"
+  },
+  "deepLevel": {
+    "kind": "measured",
+    "text": "−1.29111",
+    "tex": "-1.29111"
+  },
+  "depthsAgreementBound": {
+    "kind": "bound",
+    "text": "0.001",
+    "tex": "0.001"
+  },
+  "depthsFirst": {
+    "kind": "measured",
+    "text": "0.2398",
+    "tex": "0.2398"
+  },
+  "depthsFitFrom": {
+    "kind": "exact",
+    "text": "8",
+    "tex": "8"
+  },
+  "depthsFitFromLate": {
+    "kind": "exact",
+    "text": "12",
+    "tex": "12"
+  },
+  "depthsLargest": {
+    "kind": "exact",
+    "text": "20",
+    "tex": "20"
+  },
+  "depthsLast": {
+    "kind": "measured",
+    "text": "0.3215",
+    "tex": "0.3215"
+  },
+  "depthsLastStep": {
+    "kind": "measured",
+    "text": "6.7 × 10⁻⁴",
+    "tex": "6.7\\times10^{-4}"
+  },
+  "depthsLimit": {
+    "kind": "measured",
+    "text": "0.3371",
+    "tex": "0.3371"
+  },
+  "depthsLimitLate": {
+    "kind": "measured",
+    "text": "0.3375",
+    "tex": "0.3375"
+  },
+  "depthsPower": {
+    "kind": "measured",
+    "text": "0.82",
+    "tex": "0.82"
+  },
+  "depthsSmallest": {
+    "kind": "exact",
+    "text": "3",
+    "tex": "3"
+  },
+  "desitterSpread": {
+    "kind": "percent",
+    "text": "1%",
+    "tex": "1\\%"
+  },
+  "desitterTemperature": {
+    "kind": "measured",
+    "text": "2.20 × 10⁻³⁰ K",
+    "tex": "2.20\\times10^{-30}\\,\\mathrm{K}"
+  },
+  "dropDepth": {
+    "kind": "measured",
+    "text": "0.295",
+    "tex": "0.295"
+  },
+  "dropToleranceBound": {
+    "kind": "bound",
+    "text": "0.001",
+    "tex": "0.001"
+  },
+  "exitChainCells": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "exitChainFloor": {
+    "kind": "measured",
+    "text": "−1.118",
+    "tex": "-1.118"
+  },
+  "exitChainGroundPerCell": {
+    "kind": "measured",
+    "text": "−1.216",
+    "tex": "-1.216"
+  },
+  "exitGain": {
+    "kind": "measured",
+    "text": "0.098",
+    "tex": "0.098"
+  },
+  "exitIdentityBound": {
+    "kind": "bound",
+    "text": "10⁻⁹",
+    "tex": "10^{-9}"
+  },
+  "exitTransverseField": {
+    "kind": "input",
+    "text": "0.3",
+    "tex": "0.3"
+  },
+  "gluingContextual": {
+    "kind": "measured",
+    "text": "0.4142",
+    "tex": "0.4142"
+  },
+  "gluingDualBound": {
+    "kind": "bound",
+    "text": "10⁻⁶",
+    "tex": "10^{-6}"
+  },
+  "gluingShare": {
+    "kind": "measured",
+    "text": "0.5858",
+    "tex": "0.5858"
+  },
+  "groundEnergyPerCell": {
+    "kind": "measured",
+    "text": "−1.28790",
+    "tex": "-1.28790"
+  },
+  "largeAgreementBound": {
+    "kind": "bound",
+    "text": "10⁻⁶",
+    "tex": "10^{-6}"
+  },
+  "largeCurvatureSix": {
+    "kind": "measured",
+    "text": "0.12",
+    "tex": "0.12"
+  },
+  "largeDepthLast": {
+    "kind": "measured",
+    "text": "0.3346",
+    "tex": "0.3346"
+  },
+  "largeDoublingShare": {
+    "kind": "measured",
+    "text": "0.51",
+    "tex": "0.51"
+  },
+  "largeFitFrom": {
+    "kind": "exact",
+    "text": "40",
+    "tex": "40"
+  },
+  "largeFitFromLate": {
+    "kind": "exact",
+    "text": "80",
+    "tex": "80"
+  },
+  "largeGapBound": {
+    "kind": "bound",
+    "text": "10⁻⁴",
+    "tex": "10^{-4}"
+  },
+  "largeLargest": {
+    "kind": "exact",
+    "text": "320",
+    "tex": "320"
+  },
+  "largeLimit": {
+    "kind": "measured",
+    "text": "0.3356",
+    "tex": "0.3356"
+  },
+  "largeLimitLate": {
+    "kind": "measured",
+    "text": "0.3356",
+    "tex": "0.3356"
+  },
+  "largePower": {
+    "kind": "measured",
+    "text": "0.96",
+    "tex": "0.96"
+  },
+  "largePowerLate": {
+    "kind": "measured",
+    "text": "0.98",
+    "tex": "0.98"
+  },
+  "largeSharedLargest": {
+    "kind": "exact",
+    "text": "20",
+    "tex": "20"
+  },
+  "largeSmallest": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "noWeightBound": {
+    "kind": "bound",
+    "text": "10⁻⁶",
+    "tex": "10^{-6}"
+  },
+  "patchCoefficient": {
+    "kind": "measured",
+    "text": "3.14161",
+    "tex": "3.14161"
+  },
+  "patchLengthFirst": {
+    "kind": "exact",
+    "text": "8",
+    "tex": "8"
+  },
+  "patchLengthLast": {
+    "kind": "exact",
+    "text": "40",
+    "tex": "40"
+  },
+  "patchNearCoefficient": {
+    "kind": "measured",
+    "text": "3.302",
+    "tex": "3.302"
+  },
+  "patchNearRatio": {
+    "kind": "measured",
+    "text": "1.05",
+    "tex": "1.05"
+  },
+  "patchNearShape": {
+    "kind": "percent",
+    "text": "2.2%",
+    "tex": "2.2\\%"
+  },
+  "patchRatioGapFirst": {
+    "kind": "measured",
+    "text": "1.4 × 10⁻⁴",
+    "tex": "1.4\\times10^{-4}"
+  },
+  "patchRatioGapLast": {
+    "kind": "measured",
+    "text": "5.6 × 10⁻⁶",
+    "tex": "5.6\\times10^{-6}"
+  },
+  "patchShapeBound": {
+    "kind": "bound",
+    "text": "10⁻⁴",
+    "tex": "10^{-4}"
+  },
+  "patchTwoPi": {
+    "kind": "measured",
+    "text": "3.14159",
+    "tex": "3.14159"
+  },
+  "phaseGapBound": {
+    "kind": "bound",
+    "text": "10⁻⁷",
+    "tex": "10^{-7}"
+  },
+  "planckFraction": {
+    "kind": "input",
+    "text": "0.6847",
+    "tex": "0.6847"
+  },
+  "planckHubble": {
+    "kind": "input",
+    "text": "67.36",
+    "tex": "67.36"
+  },
+  "profileCutFraction": {
+    "kind": "measured",
+    "text": "−0.01",
+    "tex": "-0.01"
+  },
+  "profileNearRatio": {
+    "kind": "measured",
+    "text": "0.17",
+    "tex": "0.17"
+  },
+  "profileSlope": {
+    "kind": "measured",
+    "text": "5.9",
+    "tex": "5.9"
+  },
+  "programsAgreeBound": {
+    "kind": "bound",
+    "text": "10⁻⁷",
+    "tex": "10^{-7}"
+  },
+  "randomGraphExtraLink": {
+    "kind": "input",
+    "text": "0.3",
+    "tex": "0.3"
+  },
+  "randomGraphSeedOffset": {
+    "kind": "exact",
+    "text": "1000",
+    "tex": "1000"
+  },
+  "rateMatchesWeightBound": {
+    "kind": "bound",
+    "text": "10⁻⁴",
+    "tex": "10^{-4}"
+  },
+  "recordsChshFirst": {
+    "kind": "measured",
+    "text": "2.828",
+    "tex": "2.828"
+  },
+  "recordsChshLast": {
+    "kind": "measured",
+    "text": "0.7071",
+    "tex": "0.7071"
+  },
+  "recordsEnergyBound": {
+    "kind": "bound",
+    "text": "10⁻¹²",
+    "tex": "10^{-12}"
+  },
+  "recordsGapBound": {
+    "kind": "bound",
+    "text": "10⁻⁹",
+    "tex": "10^{-9}"
+  },
+  "recordsHistoryGap": {
+    "kind": "measured",
+    "text": "0.025",
+    "tex": "0.025"
+  },
+  "recordsQubits": {
+    "kind": "exact",
+    "text": "8",
+    "tex": "8"
+  },
+  "recordsSignalBound": {
+    "kind": "bound",
+    "text": "10⁻¹²",
+    "tex": "10^{-12}"
+  },
+  "recordsSteps": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "recordsThreshold": {
+    "kind": "measured",
+    "text": "0.6818",
+    "tex": "0.6818"
+  },
+  "redshiftGapBound": {
+    "kind": "bound",
+    "text": "10⁻¹²",
+    "tex": "10^{-12}"
+  },
+  "ringCells": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "ringNearLevel": {
+    "kind": "input",
+    "text": "10⁻⁷",
+    "tex": "10^{-7}"
+  },
+  "ringShallowDeepGreatest": {
+    "kind": "measured",
+    "text": "0.0154",
+    "tex": "0.0154"
+  },
+  "ringShallowDeepLeast": {
+    "kind": "measured",
+    "text": "0.0148",
+    "tex": "0.0148"
+  },
+  "ringShallowDepth": {
+    "kind": "input",
+    "text": "0.2",
+    "tex": "0.2"
+  },
+  "ringShift": {
+    "kind": "input",
+    "text": "0.001",
+    "tex": "0.001"
+  },
+  "ringSpreadBound": {
+    "kind": "bound",
+    "text": "0.005",
+    "tex": "0.005"
+  },
+  "scalingFirst": {
+    "kind": "measured",
+    "text": "0.240",
+    "tex": "0.240"
+  },
+  "scalingLargest": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "scalingLast": {
+    "kind": "measured",
+    "text": "0.295",
+    "tex": "0.295"
+  },
+  "scalingSmallest": {
+    "kind": "exact",
+    "text": "3",
+    "tex": "3"
+  },
+  "signalCells": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "signalCrossing": {
+    "kind": "measured",
+    "text": "0.651",
+    "tex": "0.651"
+  },
+  "signalCrossingSpreadBound": {
+    "kind": "bound",
+    "text": "0.05",
+    "tex": "0.05"
+  },
+  "signalExponent": {
+    "kind": "measured",
+    "text": "−1.00",
+    "tex": "-1.00"
+  },
+  "signalWallBound": {
+    "kind": "bound",
+    "text": "10⁻⁸",
+    "tex": "10^{-8}"
+  },
+  "signalWindow": {
+    "kind": "input",
+    "text": "10⁴",
+    "tex": "10^{4}"
+  },
+  "simCells": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "simDeepDepth": {
+    "kind": "input",
+    "text": "1",
+    "tex": "1"
+  },
+  "simShallowDepth": {
+    "kind": "input",
+    "text": "0.2",
+    "tex": "0.2"
+  },
+  "slacknessBound": {
+    "kind": "bound",
+    "text": "10⁻⁷",
+    "tex": "10^{-7}"
+  },
+  "spaceCells": {
+    "kind": "exact",
+    "text": "3000",
+    "tex": "3000"
+  },
+  "spaceEntropyBound": {
+    "kind": "bound",
+    "text": "5 × 10⁻⁴",
+    "tex": "5\\times10^{-4}"
+  },
+  "spaceEntropyCells": {
+    "kind": "exact",
+    "text": "600",
+    "tex": "600"
+  },
+  "spaceFallMin": {
+    "kind": "input",
+    "text": "0.1",
+    "tex": "0.1"
+  },
+  "spacePowerHigh": {
+    "kind": "measured",
+    "text": "1.001",
+    "tex": "1.001"
+  },
+  "spacePowerLow": {
+    "kind": "measured",
+    "text": "0.9998",
+    "tex": "0.9998"
+  },
+  "spaceSpeedBound": {
+    "kind": "bound",
+    "text": "0.005",
+    "tex": "0.005"
+  },
+  "spaceStart": {
+    "kind": "exact",
+    "text": "300",
+    "tex": "300"
+  },
+  "spaceStepShare": {
+    "kind": "percent",
+    "text": "2.9%",
+    "tex": "2.9\\%"
+  },
+  "spaceStepWeight": {
+    "kind": "input",
+    "text": "0.3",
+    "tex": "0.3"
+  },
+  "spaceStepsDrop": {
+    "kind": "input",
+    "text": "0.35",
+    "tex": "0.35"
+  },
+  "spaceStepsSmooth": {
+    "kind": "input",
+    "text": "15",
+    "tex": "15"
+  },
+  "spaceStop": {
+    "kind": "exact",
+    "text": "2700",
+    "tex": "2700"
+  },
+  "spaceWaveBound": {
+    "kind": "bound",
+    "text": "0.001",
+    "tex": "0.001"
+  },
+  "spaceWellMin": {
+    "kind": "input",
+    "text": "0.2",
+    "tex": "0.2"
+  },
+  "spaceWellWidth": {
+    "kind": "input",
+    "text": "0.1",
+    "tex": "0.1"
+  },
+  "spaceWidth": {
+    "kind": "input",
+    "text": "40",
+    "tex": "40"
+  },
+  "spaceZeroBound": {
+    "kind": "bound",
+    "text": "0.003",
+    "tex": "0.003"
+  },
+  "spaceZeroFrom": {
+    "kind": "exact",
+    "text": "2000",
+    "tex": "2000"
+  },
+  "spaceZeroMid": {
+    "kind": "exact",
+    "text": "400",
+    "tex": "400"
+  },
+  "spaceZeroNear": {
+    "kind": "exact",
+    "text": "100",
+    "tex": "100"
+  },
+  "timelessCells": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "timelessDepth": {
+    "kind": "input",
+    "text": "0.2",
+    "tex": "0.2"
+  },
+  "timelessGapFirst": {
+    "kind": "measured",
+    "text": "0.023",
+    "tex": "0.023"
+  },
+  "timelessGapLast": {
+    "kind": "measured",
+    "text": "3.1 × 10⁻⁴",
+    "tex": "3.1\\times10^{-4}"
+  },
+  "timelessLevels": {
+    "kind": "exact",
+    "text": "512",
+    "tex": "512"
+  },
+  "timelessLevelsFirst": {
+    "kind": "exact",
+    "text": "8",
+    "tex": "8"
+  },
+  "timelessReadings": {
+    "kind": "exact",
+    "text": "64",
+    "tex": "64"
+  },
+  "timelessStoppedBound": {
+    "kind": "bound",
+    "text": "10⁻¹²",
+    "tex": "10^{-12}"
+  },
+  "tolmanGapBound": {
+    "kind": "bound",
+    "text": "10⁻⁹",
+    "tex": "10^{-9}"
+  },
+  "uniformMatchesGroundBound": {
+    "kind": "bound",
+    "text": "10⁻⁷",
+    "tex": "10^{-7}"
+  },
+  "uniformWeightsBound": {
+    "kind": "bound",
+    "text": "10⁻⁷",
+    "tex": "10^{-7}"
+  },
+  "uniqueCertified": {
+    "kind": "exact",
+    "text": "118",
+    "tex": "118"
+  },
+  "uniqueCurve": {
+    "kind": "input",
+    "text": "10⁻⁶",
+    "tex": "10^{-6}"
+  },
+  "uniqueGap": {
+    "kind": "input",
+    "text": "10⁻⁶",
+    "tex": "10^{-6}"
+  },
+  "uniqueModels": {
+    "kind": "exact",
+    "text": "240",
+    "tex": "240"
+  },
+  "uniqueNarrow": {
+    "kind": "exact",
+    "text": "67",
+    "tex": "67"
+  },
+  "uniqueNear": {
+    "kind": "input",
+    "text": "10⁻⁷",
+    "tex": "10^{-7}"
+  },
+  "uniqueRingCurvature": {
+    "kind": "measured",
+    "text": "0.033",
+    "tex": "0.033"
+  },
+  "uniqueRingDepth": {
+    "kind": "input",
+    "text": "0.2",
+    "tex": "0.2"
+  },
+  "uniqueSpreadBound": {
+    "kind": "bound",
+    "text": "0.05",
+    "tex": "0.05"
+  },
+  "uniqueWide": {
+    "kind": "exact",
+    "text": "55",
+    "tex": "55"
+  },
+  "xxzAnisotropy": {
+    "kind": "input",
+    "text": "0.5",
+    "tex": "0.5"
+  },
+  "xxzCurveField": {
+    "kind": "input",
+    "text": "0.2",
+    "tex": "0.2"
+  },
+  "xxzDeepClock": {
+    "kind": "measured",
+    "text": "0.0081",
+    "tex": "0.0081"
+  },
+  "xxzDeepest": {
+    "kind": "input",
+    "text": "8",
+    "tex": "8"
+  },
+  "xxzDepthFactorBound": {
+    "kind": "bound",
+    "text": "10⁻⁴",
+    "tex": "10^{-4}"
+  },
+  "xxzDepthLeftLeast": {
+    "kind": "percent",
+    "text": "0.2%",
+    "tex": "0.2\\%"
+  },
+  "xxzDepthLeftMost": {
+    "kind": "percent",
+    "text": "0.7%",
+    "tex": "0.7\\%"
+  },
+  "xxzEvenFirstCells": {
+    "kind": "exact",
+    "text": "4",
+    "tex": "4"
+  },
+  "xxzEvenLastCells": {
+    "kind": "exact",
+    "text": "6",
+    "tex": "6"
+  },
+  "xxzFieldLeast": {
+    "kind": "input",
+    "text": "0.1",
+    "tex": "0.1"
+  },
+  "xxzFieldMost": {
+    "kind": "input",
+    "text": "0.4",
+    "tex": "0.4"
+  },
+  "xxzFieldSpread": {
+    "kind": "percent",
+    "text": "5%",
+    "tex": "5\\%"
+  },
+  "xxzKappaFirst": {
+    "kind": "measured",
+    "text": "0.065",
+    "tex": "0.065"
+  },
+  "xxzKappaLast": {
+    "kind": "measured",
+    "text": "0.035",
+    "tex": "0.035"
+  },
+  "xxzKeptCells": {
+    "kind": "exact",
+    "text": "5",
+    "tex": "5"
+  },
+  "xxzKeptDelta": {
+    "kind": "input",
+    "text": "1.5",
+    "tex": "1.5"
+  },
+  "xxzKeptLift": {
+    "kind": "measured",
+    "text": "4.9 × 10⁻⁴",
+    "tex": "4.9\\times10^{-4}"
+  },
+  "xxzKeptProduct": {
+    "kind": "measured",
+    "text": "0.0013",
+    "tex": "0.0013"
+  },
+  "xxzKeptShare": {
+    "kind": "measured",
+    "text": "0.160",
+    "tex": "0.160"
+  },
+  "xxzKeptSpin": {
+    "kind": "measured",
+    "text": "−0.64",
+    "tex": "-0.64"
+  },
+  "xxzLawGap": {
+    "kind": "percent",
+    "text": "1.2%",
+    "tex": "1.2\\%"
+  },
+  "xxzOddDeltaLeast": {
+    "kind": "input",
+    "text": "−0.5",
+    "tex": "-0.5"
+  },
+  "xxzOddDeltaMost": {
+    "kind": "input",
+    "text": "1.5",
+    "tex": "1.5"
+  },
+  "xxzOddDropped": {
+    "kind": "exact",
+    "text": "7",
+    "tex": "7"
+  },
+  "xxzOddFirstCells": {
+    "kind": "exact",
+    "text": "3",
+    "tex": "3"
+  },
+  "xxzOddFirstDepth": {
+    "kind": "measured",
+    "text": "1.05",
+    "tex": "1.05"
+  },
+  "xxzOddLastCells": {
+    "kind": "exact",
+    "text": "5",
+    "tex": "5"
+  },
+  "xxzOddLastDepth": {
+    "kind": "measured",
+    "text": "0.774",
+    "tex": "0.774"
+  },
+  "xxzOddRings": {
+    "kind": "exact",
+    "text": "8",
+    "tex": "8"
+  },
+  "xxzSimCells": {
+    "kind": "exact",
+    "text": "4",
+    "tex": "4"
+  },
+  "xxzSimDepth": {
+    "kind": "input",
+    "text": "8",
+    "tex": "8"
+  }
+}

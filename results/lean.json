@@ -1,0 +1,1250 @@
+{
+  "toolchain": "leanprover/lean4:v4.34.0",
+  "packages": {
+    "mathlib": "5ed2965256430c3649e86755f9576b54eca72435",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "sources": "282e57918d0be7025f60232801f7ac0280fcce17c8752375f99f620b1e55cf20",
+  "declarations": {
+    "Saddle.abs_weight_le_one": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.below_convex": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.below_isClosed": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.chsh_of_one_description": {
+      "module": "Saddle.Bell",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.chsh_of_parts": {
+      "module": "Saddle.Bell",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.commonValue": {
+      "module": "Saddle.Rates",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.commonValue_shifted": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.conditioned": {
+      "module": "Saddle.Conditioned",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.conditioned_evolution": {
+      "module": "Saddle.Conditioned",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.conditioned_kronecker_one": {
+      "module": "Saddle.Conditioned",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.conditioned_one_kronecker": {
+      "module": "Saddle.Conditioned",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.conditioned_smul": {
+      "module": "Saddle.Conditioned",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.conj_mem_states": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.continuous_expectation": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.continuous_floor": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.danskin_right": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.deepened": {
+      "module": "Saddle.Dropout",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.deepened_isHermitian": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.divided": {
+      "module": "Saddle.Division",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.divided_isHermitian": {
+      "module": "Saddle.Division",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.dropout_depth": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.dropout_iff": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.dropout_never": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.dropout_of_held": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.dropout_value": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.eigenstate": {
+      "module": "Saddle.Lowest",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.eigenstate_mem_states": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.every_weighting_some_division": {
+      "module": "Saddle.Division",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.exists_eigenvalues_eq_lowest": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.exists_state_le_floor": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.exp_kronecker_one": {
+      "module": "Saddle.Conditioned",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.exp_mulVec_of_eigen": {
+      "module": "Saddle.Conditioned",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.exp_one_kronecker": {
+      "module": "Saddle.Conditioned",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation": {
+      "module": "Saddle.States",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_add": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_add_right": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_conj": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_deepened_ne": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_deepened_self": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_divided": {
+      "module": "Saddle.Division",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_eigenstate": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_eq_lowest_iff": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_le_peak": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_smul": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_sub_smul_one": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_sum_left": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_sum_right": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_transpose": {
+      "module": "Saddle.Real",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_uniform": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_vecMulVec": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_weighted": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.expectation_weighted_divided": {
+      "module": "Saddle.Division",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.extend": {
+      "module": "Saddle.Dropout",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.extend_mem_simplex": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.extend_self": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.floor": {
+      "module": "Saddle.States",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.floor_le_peak": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.floor_probed": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.floor_shifted": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.floor_uniform": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.hamiltonian": {
+      "module": "Saddle.Uniform",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.hamiltonian_eq_sum": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.held": {
+      "module": "Saddle.Dropout",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.held_above": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.held_isCompact": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.kroneckerOne": {
+      "module": "Saddle.Conditioned",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.lowest": {
+      "module": "Saddle.States",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.lowest_add_smul_one": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.lowest_congr": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.lowest_isLeast": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.lowest_le_eigenvalues": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.lowest_le_expectation_kronecker_one": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.lowest_le_expectation_probe": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.norm_entry_le_one": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.oneKronecker": {
+      "module": "Saddle.Conditioned",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.one_kronecker_mulVec": {
+      "module": "Saddle.Conditioned",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.one_kronecker_sub_smul": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.optimal": {
+      "module": "Saddle.Rates",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.others": {
+      "module": "Saddle.Dropout",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.others_isHermitian": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.peak": {
+      "module": "Saddle.States",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.peak_others_le": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.probe": {
+      "module": "Saddle.Probes",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.probe_isHermitian": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.probe_mulVec_product": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.probe_sub_smul_one": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.probed": {
+      "module": "Saddle.Probes",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.probed_isHermitian": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.product": {
+      "module": "Saddle.Probes",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.product_split": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.real_states_attain": {
+      "module": "Saddle.Real",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.restrict_extend": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.restrict_mem_simplex": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.rotate_back": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.sSup_image_eq_of_isMaxOn": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_bracket": {
+      "module": "Saddle.Certificate",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_certificate": {
+      "module": "Saddle.Certificate",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_conditions": {
+      "module": "Saddle.Conditions",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_evolution": {
+      "module": "Saddle.Evolution",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_forbids": {
+      "module": "Saddle.Forbids",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_gain": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_probes": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_rates_forbidden": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_rates_left": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_rates_right": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_rates_unique": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.saddle_value": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.shifted": {
+      "module": "Saddle.Rates",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.shifted_isHermitian": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.simplex": {
+      "module": "Saddle.States",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.simplex_isCompact": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.simplex_nonempty": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.star_product_dotProduct": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.states": {
+      "module": "Saddle.States",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.states_convex": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.states_isClosed": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.states_isCompact": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.states_nonempty": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.sub_lowest_posSemidef": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.sub_smul_kronecker_one": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.sum_divided": {
+      "module": "Saddle.Division",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.trace_mul_re_nonneg": {
+      "module": "Saddle.Lowest",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.transpose_mem_states": {
+      "module": "Saddle.Real",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.uniform": {
+      "module": "Saddle.Uniform",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.uniform_exact": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.uniform_mem_simplex": {
+      "module": "Saddle.Uniform",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.values": {
+      "module": "Saddle.Minimax",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.values_convex": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.values_isCompact": {
+      "module": "Saddle.Minimax",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.weight_le_one": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.weighted": {
+      "module": "Saddle.States",
+      "kind": "def",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.weighted_avoids_weightless": {
+      "module": "Saddle.Crossing",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.weighted_deepened_of_zero": {
+      "module": "Saddle.Dropout",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.weighted_isHermitian": {
+      "module": "Saddle.States",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.weighted_kronecker_one": {
+      "module": "Saddle.Probes",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.weighted_of_pieces": {
+      "module": "Saddle.Evolution",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "Saddle.weighted_shifted": {
+      "module": "Saddle.Rates",
+      "kind": "theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

@@ -1,0 +1,327 @@
+# Each claim: a statement (tokens allowed), its standing (derived, stated,
+# measured, fixed by comparison), for a derived claim the label of the appendix
+# that proves it in full, the evidence that exists, any evidence still owed, and
+# a status: checked, stated or open.
+
+saddle.exchange:
+  statement: "For any non-empty finite set of places and links with a Hermitian piece on each, the least over states of the greatest local density equals the greatest over weights on the simplex of the lowest eigenvalue of the weighted sum of densities."
+  standing: derived
+  proof: app:saddle
+  evidence: [tests/test_saddle.py::test_programs_agree_on_random_instances, "lean:lean/Saddle/Minimax.lean::saddle_value"]
+  status: checked
+saddle.conditions:
+  statement: "Any optimal state and any optimal weighting form a saddle pair: the weighted sum of densities holds the state at the common value, no density exceeds it, weight sits only where a place reaches it, and the weights sum to one."
+  standing: derived
+  proof: app:saddle
+  evidence: [tests/test_saddle.py::test_saddle_conditions_hold_on_random_instances, "lean:lean/Saddle/Conditions.lean::saddle_conditions"]
+  status: checked
+  uses: [saddle.exchange]
+saddle.certificate:
+  statement: "The common value lies at or above every weighting's floor and at or below every state's greatest density, so a state and a weighting whose two values agree within a margin are each within that margin of it; a state that holds every density at or below a weighting's floor forms a saddle pair with it."
+  standing: derived
+  proof: app:saddle
+  evidence: [tests/test_saddle.py::test_any_state_and_weighting_bracket_the_common_value, tests/test_saddle.py::test_the_conditions_certify_only_at_the_lowest_eigenvalue, "lean:lean/Saddle/Certificate.lean::saddle_bracket", "lean:lean/Saddle/Certificate.lean::saddle_certificate"]
+  status: checked
+  uses: [saddle.exchange]
+saddle.forbids:
+  statement: "A place that some optimal state leaves below the common value carries no weight in any optimal weighting, and every place with weight sits at the common value."
+  standing: derived
+  proof: app:saddle
+  evidence: [tests/test_saddle.py::test_a_place_below_the_common_value_carries_no_weight, "lean:lean/Saddle/Forbids.lean::saddle_forbids"]
+  status: checked
+  uses: [saddle.conditions]
+saddle.rates:
+  statement: "Shifting a place's density by a constant moves the common value at one-sided rates equal to the greatest and least weight that place takes over the optimal weightings, and at exactly its weight where that weight is unique."
+  standing: derived
+  proof: app:rates
+  evidence: [tests/test_ring.py::test_weights_are_rates_of_the_common_value, "lean:lean/Saddle/Rates.lean::saddle_rates_right", "lean:lean/Saddle/Rates.lean::saddle_rates_left", "lean:lean/Saddle/Rates.lean::saddle_rates_unique", "lean:lean/Saddle/Rates.lean::saddle_rates_forbidden"]
+  status: checked
+  uses: [saddle.forbids]
+uniform.exact:
+  statement: "On any ring that a shift around it maps into itself, the common value is the ground energy per cell and uniform weights attain it."
+  standing: derived
+  proof: app:uniform
+  evidence: [tests/test_ring.py::test_uniform_ring_matches_its_ground_energy, "lean:lean/Saddle/Uniform.lean::uniform_exact"]
+  status: checked
+  uses: [saddle.exchange]
+programs.real:
+  statement: "When every density is real symmetric, real symmetric states attain the least greatest local density."
+  standing: derived
+  proof: app:programs
+  evidence: [tests/test_saddle.py::test_programs_agree_on_random_instances, "lean:lean/Saddle/Real.lean::real_states_attain"]
+  status: checked
+  uses: [saddle.exchange]
+ring.uniform:
+  statement: "On a uniform ring of {{ringCells}} qubits, the computed common value equals the ground energy per cell, {{groundEnergyPerCell}}, and the computed weights are uniform to within {{uniformWeightsBound}}."
+  standing: measured
+  evidence: [tests/test_ring.py::test_uniform_ring_matches_its_ground_energy]
+  status: checked
+  uses: [uniform.exact, programs.real]
+ring.threshold:
+  statement: "With one cell deepened on a ring of {{ringCells}} qubits, the cell drops out at depth {{dropDepth}}, the least depth at which the other cells' optimal states hold it at their common value; tightening their tolerance tenfold moves it by less than {{dropToleranceBound}}. Past it the optimal states hold the cell anywhere from the common value down to {{deepCellMarginMost}} below it at depth {{deepDepth}}."
+  standing: measured
+  evidence: [tests/test_ring.py::test_deep_cell_loses_its_weight_past_a_finite_depth, tests/test_ring.py::test_past_the_drop_out_the_deep_density_is_not_fixed]
+  status: checked
+  uses: [saddle.dropout]
+ring.rates:
+  statement: "On the uniform ring, on the ring with its first cell at depth {{ringShallowDepth}} and on the ring past the drop-out, every computed weight equals the measured rate at which the common value moves when its place's density is shifted by a constant, to within {{rateMatchesWeightBound}}; over the weightings within {{ringNearLevel}} of the common value, each weight spreads by less than {{ringSpreadBound}}, and the deepened cell's weight at depth {{ringShallowDepth}} lies between {{ringShallowDeepLeast}} and {{ringShallowDeepGreatest}}."
+  standing: measured
+  evidence: [tests/test_ring.py::test_weights_are_rates_of_the_common_value, tests/test_ring.py::test_the_optimal_weighting_is_unique_to_its_spread]
+  status: checked
+  uses: [saddle.rates]
+catalogue.general:
+  statement: "Across {{catalogueModels}} models in {{catalogueFamilies}} families on {{catalogueLattices}} lattices, up to {{catalogueLargest}} cells, the two programs agreed to within {{catalogueGapBound}}, the four conditions held, every place below the common value by more than {{catalogueBelowMargin}} carried a weight below {{catalogueNoWeightBound}}, the one-sided rates bracketed the first place's weight, and every uniform ring sat at its ground energy per cell."
+  standing: measured
+  evidence: [tests/test_catalogue.py::test_general_claims_hold_across_the_catalogue]
+  status: checked
+  uses: [saddle.exchange, saddle.conditions, saddle.forbids, saddle.rates, uniform.exact]
+catalogue.deep:
+  statement: "Of the cells that carried weight before deepening, a cell deepened to depth {{catalogueDeepDepth}} lost it in {{catalogueIsingDropped}} of {{catalogueIsingModels}} Ising models and in {{catalogueOtherDropped}} of the {{catalogueOtherModels}} XXZ and random models, keeping a weight of up to {{catalogueKeptLargest}} in the rest."
+  standing: measured
+  evidence: [tests/test_catalogue.py::test_deep_cell_drops_out_in_every_ising_model]
+  status: checked
+  uses: [saddle.dropout]
+scaling.ising:
+  statement: "On Ising rings of {{scalingSmallest}} to {{scalingLargest}} cells the deepened cell drops out at every size, at a depth rising from {{scalingFirst}} to {{scalingLast}}."
+  standing: measured
+  evidence: [tests/test_scaling.py::test_ising_threshold_exists_at_every_size]
+  status: checked
+  uses: [saddle.dropout]
+scaling.xxz:
+  statement: "On XXZ rings of {{scalingSmallest}} to {{scalingLargest}} cells at anisotropy {{xxzAnisotropy}} the deepened cell drops out on the odd rings, at depth {{xxzOddFirstDepth}} on {{xxzOddFirstCells}} cells and {{xxzOddLastDepth}} on {{xxzOddLastCells}}, and never on the even rings, where its weight falls as the inverse of the depth, the product settling near {{xxzKappaFirst}} on {{xxzEvenFirstCells}} cells and {{xxzKappaLast}} on {{xxzEvenLastCells}}."
+  standing: measured
+  evidence: [tests/test_scaling.py::test_xxz_outcome_follows_parity, tests/test_scaling.py::test_even_xxz_product_follows_the_field]
+  status: checked
+  uses: [parity.rings]
+saddle.evolution:
+  statement: "The saddle state is stationary under the evolution the weighted Hamiltonian generates, which advances each place's own piece at the rate of its weight and each link at the mean rate of its ends, so a place with no weight contributes no piece of its own to it."
+  standing: derived
+  proof: app:saddle
+  evidence: [tests/test_ring.py::test_weights_are_rates_of_the_common_value, "lean:lean/Saddle/Evolution.lean::saddle_evolution", "lean:lean/Saddle/Evolution.lean::weighted_of_pieces"]
+  status: checked
+  uses: [saddle.conditions]
+evolution.conditioned:
+  statement: "If the whole, the system with its probes and a reference system with its own energy, is stationary under the saddle's weighted generator plus the reference's energy, then the rest, conditioned on the reference having run under its own energy for a span t, has evolved, up to a phase, under the weighted generator for the same span."
+  standing: derived
+  proof: app:probes
+  evidence: [tests/test_timeless.py::test_conditioned_probes_turn_at_their_weights, "lean:lean/Saddle/Conditioned.lean::conditioned_evolution"]
+  status: checked
+  uses: [saddle.evolution, probes.idle]
+timeless.rates:
+  statement: "With the ring of {{timelessCells}} cells, a probe at every place and a reference system solved once in a stationary state of the weighted constraint, every probe's rate conditioned on the reference's reading is its place's weight to within half the reference's resolution, the gap falling from {{timelessGapFirst}} at {{timelessLevelsFirst}} levels to {{timelessGapLast}} at {{timelessLevels}}; past the deep cell's drop-out its probe's rate stays below {{timelessStoppedBound}}."
+  standing: measured
+  evidence: [tests/test_timeless.py::test_conditioned_probes_turn_at_their_weights, tests/test_timeless.py::test_the_stopped_probe_does_not_turn]
+  status: checked
+  uses: [evolution.conditioned]
+critical.charge:
+  statement: "On uniform critical transverse-field rings of {{criticalSizeFirst}} to {{criticalSizeLast}} cells, solved exactly, the common value is a part the same at every size, {{criticalPerPlace}}, and a part set by the ring's size that falls as one over its square with the coefficient of a central charge {{criticalChargeSize}}; an interval's entanglement entropy on the largest ring gives the central charge independently as {{criticalChargeEntropy}}, the two within {{criticalChargeGapBound}}."
+  standing: measured
+  evidence: [tests/test_critical.py::test_the_fermions_are_the_ring, tests/test_critical.py::test_the_two_central_charges_agree]
+  status: checked
+  uses: [uniform.exact]
+division.any:
+  statement: "For every weighting there are constants summing to zero such that the densities shifted by them, which sum to the same Hamiltonian, have that weighting as an optimal one."
+  standing: derived
+  proof: app:rates
+  evidence: [tests/test_saddle.py::test_every_weighting_is_some_divisions, "lean:lean/Saddle/Division.lean::every_weighting_some_division"]
+  status: checked
+  uses: [saddle.exchange]
+division.canonical:
+  statement: "Every Hamiltonian on finitely many places splits in exactly one way into parts, each acting on a set of places and averaging to zero over each place of the set; sharing each part equally among its places gives densities that sum to the Hamiltonian and name no place, and every model's densities here are these."
+  standing: derived
+  proof: app:division
+  evidence: [tests/test_saddle.py::test_the_models_divide_their_energy_canonically]
+  unformalized: "The parts are defined by partial traces over the factors of a many-place tensor product, which Mathlib does not provide for matrices; stating the decomposition needs them built first, which the proving phase takes up."
+  status: checked
+  uses: []
+patch.profile:
+  statement: "For intervals of {{patchLengthFirst}} to {{patchLengthLast}} cells of the infinite critical transverse-field chain, the weights of the entanglement Hamiltonian, read with their longer-range terms, take the form x(l - x)/l to within {{patchShapeBound}} of their largest at the longest, with coefficient {{patchCoefficient}} against 2 pi / v = {{patchTwoPi}}; read from the nearest terms alone, the coefficient is {{patchNearCoefficient}}."
+  standing: measured
+  evidence: [tests/test_patch.py::test_the_correlations_are_the_long_rings, tests/test_patch.py::test_the_weights_take_the_profile_with_their_longer_range_terms]
+  status: checked
+  uses: []
+division.unique:
+  statement: "A division of a Hamiltonian into densities that sum to it, linear in it, unchanged by a change of basis at any place, giving each part only to the places it acts on and sharing it alike among them, is the canonical division; putting each part's zero at its lowest level is not linear."
+  standing: derived
+  proof: app:division
+  evidence: [tests/test_saddle.py::test_the_canonical_division_meets_the_four_asks]
+  unformalized: "The proof rests on Schur's lemma and on the irreducibility of the traceless operators at a place under conjugation by its unitaries, which Mathlib does not state for products of unitary groups acting on many-place tensor products; the proving phase takes it up with the partial traces of division.canonical."
+  status: checked
+  uses: [division.canonical]
+bell.factorization:
+  statement: "For two readings on each of two parts, self-adjoint with square one, the combination A0 B0 + A0 B1 + A1 B0 - A1 B1 is at most 2 when all four readings commute, and at most 2 sqrt 2 when only readings of different parts commute."
+  standing: derived
+  proof: app:bell
+  evidence: [tests/test_records.py::test_the_factorization_bounds, "lean:lean/Saddle/Bell.lean::chsh_of_one_description", "lean:lean/Saddle/Bell.lean::chsh_of_parts"]
+  status: checked
+  uses: []
+history.conditioning:
+  statement: "For unitary steps from a unit starting state, the history Hamiltonian is positive semidefinite with a one-dimensional null space, spanned by the whole that holds every step at once; conditioned on the step register's reading t, the rest is the state after t steps."
+  standing: derived
+  proof: app:bell
+  evidence: [tests/test_records.py::test_the_history_holds_every_step]
+  unformalized: "The null space is found by conjugating with the steps' products into a path Laplacian on the step register tensored with the identity, an operator identity on a tensor product that Mathlib does not state for matrices indexed by a register and a rest; the proving phase takes it up."
+  status: checked
+  uses: [evolution.conditioned]
+records.gluing:
+  statement: "For the readings that reach 2 sqrt 2 on a maximally entangled pair, the largest share of their frequencies one classical description carries is {{gluingShare}}, by a linear program and by its dual within {{gluingDualBound}}, leaving {{gluingContextual}} that cannot glue; the dual's weights are the CHSH inequality."
+  standing: measured
+  evidence: [tests/test_records.py::test_the_gluing_program_and_its_dual_agree]
+  status: checked
+  uses: [bell.factorization]
+records.chsh:
+  statement: "In a protocol of two friends who measure a maximally entangled pair and record their outcomes, each record copied outside with overlap gamma, solved once as the ground state of its history Hamiltonian over {{recordsQubits}} qubits and {{recordsSteps}} steps, the CHSH value of the readings conditioned on the last step and on the records is (1 + gamma)^2 / sqrt 2 to within {{recordsGapBound}} at every gamma computed, from {{recordsChshFirst}} with no copy to {{recordsChshLast}} with a full one, crossing 2 at gamma = {{recordsThreshold}}; no reading on one side moves with the other side's setting by more than the bound {{recordsSignalBound}}."
+  standing: measured
+  evidence: [tests/test_records.py::test_the_records_follow_the_copy]
+  status: checked
+  uses: [history.conditioning, bell.factorization]
+scaling.weighting:
+  statement: "On Ising rings of {{depthsSmallest}} to {{depthsLargest}} cells, the depth at which a deepened cell drops out, computed in closed form from the other cells' optimum, rises from {{depthsFirst}} to {{depthsLast}}, each step adding less, the last {{depthsLastStep}}; it agrees with the state-side depths up to six cells within the bound {{depthsAgreementBound}}, and a fit of the form mu - a n^(-p) puts its limit at {{depthsLimit}} over the sizes from {{depthsFitFrom}} and {{depthsLimitLate}} over those from {{depthsFitFromLate}}."
+  standing: measured
+  evidence: [tests/test_depths.py::test_the_closed_form_matches_the_state_side, tests/test_depths.py::test_the_depth_rises_and_levels_off]
+  status: checked
+  uses: [saddle.dropout, scaling.ising]
+signals.wall:
+  statement: "Under the weighted evolution a link whose two places both carry no weight has no term, and a place with no weight whose links all join places with none appears in no term of the weighted Hamiltonian."
+  standing: derived
+  proof: app:saddle
+  evidence: [tests/test_signals.py::test_the_saddle_stops_every_signal, "lean:lean/Saddle/Crossing.lean::weighted_avoids_weightless"]
+  status: checked
+  uses: [saddle.evolution]
+signals.stop:
+  statement: "On the open transverse-field chain of {{signalCells}} cells the saddle leaves the cells between the ends without weight; along weightings approaching it, the weighted evolution must run for a span that goes as one over their weight before a disturbance crosses them, with exponent {{signalExponent}}, and at the saddle the disturbance never travels into the chain past the cell it starts in."
+  standing: measured
+  evidence: [tests/test_signals.py::test_crossing_time_goes_as_the_inverse_weight, tests/test_signals.py::test_the_saddle_stops_every_signal]
+  status: checked
+  uses: [saddle.evolution, saddle.forbids, signals.wall]
+saddle.dropout:
+  statement: "Some optimal weighting gives a deepened place no weight exactly when some state optimal for the other places holds it at or below their common value; a place that carries weight in every optimal weighting at depth zero drops out from the least depth at which that happens, past which the common value no longer moves, and never if no such state gives its deepening a positive expectation."
+  standing: derived
+  proof: app:dropout
+  evidence: [tests/test_ring.py::test_weights_are_rates_of_the_common_value, "lean:lean/Saddle/Dropout.lean::dropout_iff", "lean:lean/Saddle/Dropout.lean::dropout_value", "lean:lean/Saddle/Dropout.lean::dropout_depth", "lean:lean/Saddle/Dropout.lean::dropout_never"]
+  status: checked
+  uses: [saddle.exchange, saddle.forbids]
+parity.rings:
+  statement: "On rings whose couplings conserve the magnetization and are unchanged by a global spin flip, to first order in a weak uniform field a deepened cell never drops out of an even ring, and, where with the field off the links weighted by the limiting weights have a unique ground state at zero magnetization and their floor peaks only at zero deep field, its weight times its depth tends to the field times a response-weighted mean of the other cells' weights; on an odd ring it drops out at a finite depth whenever some state optimal for the other cells gives its spin a positive expectation."
+  standing: derived
+  proof: app:dropout
+  evidence: [tests/test_ring.py::test_weights_are_rates_of_the_common_value, tests/test_scaling.py::test_parity_hypotheses_hold_on_the_even_rings, tests/test_scaling.py::test_the_four_cell_others_floor_is_flat_without_the_field]
+  unformalized: "The even ring's law is first-order perturbation theory of a nondegenerate ground state in the field, which Mathlib cannot yet state; the odd ring's case is the drop-out depth, proved in Lean as saddle.dropout."
+  status: checked
+  uses: [saddle.dropout]
+scaling.law:
+  statement: "At the weakest field the even rings' weight times depth agrees with its derived limit to within {{xxzLawGap}}, and follows the field in proportion to within {{xxzFieldSpread}}; at that depth mu most of the gap is the finite depth's: on {{xxzEvenFirstCells}} cells the product is the law times mu/(mu + b) to within {{xxzDepthFactorBound}} at every field, and on {{xxzEvenLastCells}} cells {{xxzDepthLeftLeast}} to {{xxzDepthLeftMost}} is left once that factor is divided out, growing with the field."
+  standing: measured
+  evidence: [tests/test_scaling.py::test_even_ring_law_matches_its_limit, tests/test_scaling.py::test_even_xxz_product_follows_the_field, tests/test_scaling.py::test_the_laws_gap_at_the_deepest_depth_is_mostly_the_depths_factor]
+  status: checked
+  uses: [parity.rings]
+probes.idle:
+  statement: "Identical idle probes, one attached to every place, shift the common value by their ground energy and leave every optimal weighting optimal, so they read the weighted evolution without moving the weights."
+  standing: derived
+  proof: app:probes
+  evidence: [tests/test_ring.py::test_weights_are_rates_of_the_common_value, "lean:lean/Saddle/Probes.lean::floor_probed", "lean:lean/Saddle/Probes.lean::saddle_probes"]
+  status: checked
+  uses: [saddle.exchange]
+equilibrium.coldest:
+  statement: "As a common bound on every local energy falls to the common value, the multipliers of the state of greatest entropy within it grow without bound in the proportions of the saddle weights, so the saddle weights are the shape of the coldest equilibrium such a bound allows."
+  standing: derived
+  proof: app:coldest
+  evidence: [tests/test_ring.py::test_weights_are_rates_of_the_common_value]
+  unformalized: "The state of greatest entropy is found through maximum-entropy duality for density matrices, which Mathlib cannot yet state."
+  status: checked
+  uses: [saddle.exchange, saddle.conditions]
+exits.rotation:
+  statement: "On the open chain of {{exitChainCells}} cells, which no shift around it maps into itself, the common value {{exitChainFloor}} is not the ground energy per cell, {{exitChainGroundPerCell}}: the gain of reweighting is {{exitGain}}."
+  standing: measured
+  evidence: [tests/test_exits.py::test_uniform_value_needs_the_rotation]
+  status: checked
+  uses: [uniform.exact]
+exits.degenerate:
+  statement: "When every density is a multiple of the identity, the multipliers of the state of greatest entropy stay below {{exitIdentityBound}} at every bound computed, rather than growing without bound."
+  standing: measured
+  evidence: [tests/test_exits.py::test_coldest_needs_a_nondegenerate_saddle]
+  status: checked
+  uses: [equilibrium.coldest]
+exits.conservation:
+  statement: "With a transverse field of up to {{exitTransverseField}} on every cell, breaking the magnetization's conservation, the even XXZ ring's deepened cell still never drops out."
+  standing: measured
+  evidence: [tests/test_exits.py::test_even_ring_keeps_its_cell_without_conservation]
+  status: checked
+  uses: [parity.rings]
+saddle.gain:
+  statement: "For any densities that sum to the Hamiltonian, the common value is never below the ground energy per place, and the two are equal exactly when uniform weights are optimal; their difference is the gain of reweighting."
+  standing: derived
+  proof: app:uniform
+  evidence: [tests/test_equations.py::test_gain_measures_what_reweighting_adds, "lean:lean/Saddle/Uniform.lean::saddle_gain"]
+  status: checked
+  uses: [saddle.exchange]
+space.waves:
+  statement: "On the critical transverse-field chain of {{spaceCells}} cells, weighted smoothly by hand, uniformly, falling to {{spaceFallMin}} and in a well down to {{spaceWellMin}}, packets of long waves {{spaceWidth}} cells wide cross in the optical span, the sum over the cells crossed of one over v times the weight, to within {{spaceWaveBound}}, and their speed is v times the local weight to within {{spaceSpeedBound}}; toward a zero of the weights the span grows as ln(r1/r2)/(v kappa) to within {{spaceZeroBound}}, and a sharp step between weights one and {{spaceStepWeight}} turns back {{spaceStepShare}} of a long wave."
+  standing: measured
+  evidence: [tests/test_space.py::test_long_waves_take_the_optical_time, tests/test_space.py::test_toward_a_zero_the_time_grows_as_a_logarithm, tests/test_space.py::test_a_step_turns_back_a_share]
+  status: checked
+  uses: [saddle.evolution]
+space.entanglement:
+  statement: "On such chains of {{spaceEntropyCells}} cells, smooth or with smoothed steps, the ground state's entanglement across every cut is the conformal vacuum's on the metric -(v N)^2 dt^2 + dx^2, N the weights, with a cutoff of one cell, to within {{spaceEntropyBound}}; fitted freely, the power of the weight at the cut lies between {{spacePowerLow}} and {{spacePowerHigh}}."
+  standing: measured
+  evidence: [tests/test_space.py::test_the_ground_state_is_the_vacuum_on_the_metric]
+  status: checked
+  uses: [saddle.evolution]
+bump.saddle:
+  statement: "On critical transverse-field rings of {{bumpCellsFirst}} and {{bumpCellsLast}} cells whose couplings vary around the ring as 1 + eps cos(2 pi x / n), with eps {{bumpEpsFirst}} and {{bumpEpsLast}}, the saddle's weights, found from the weighting side alone and certified by the bracket to within {{bumpGapBound}}, form a smooth bump centred where the couplings are weakest, {{bumpWidthFirst}} and {{bumpWidthLast}} cells wide at half height. At those weights, all positive, the floor's curvature along the simplex is negative in every direction, at least {{bumpCurvatureFirst}} and {{bumpCurvatureLast}} in size, so the weights are its only maximizer; on the uniform ring of the same size the floor around uniform weights curves along the ring's longest waves by only {{bumpFlatFirst}} and {{bumpFlatLast}}."
+  standing: measured
+  evidence: [tests/test_bump.py::test_the_saddle_is_certified_by_the_bracket, tests/test_bump.py::test_the_weights_form_one_bump, tests/test_bump.py::test_the_weights_are_the_floors_only_maximizer]
+  status: checked
+  uses: [saddle.certificate]
+bump.reading:
+  statement: "Through the bump of {{bumpCellsLast}} cells, from its centre to where the weight is {{bumpLevelLast}} of its peak, packets of long waves {{bumpPacket}} cells wide cross in the optical span to within {{bumpWaveBound}}; on both rings the saddle state's entanglement across intervals inside the bump is the conformal vacuum's on the metric -(v N)^2 dt^2 + dx^2, N the saddle's weights, with a cutoff of one cell, to within {{bumpEntropyBound}}, and, fitted freely, the power of the weights lies between {{bumpPowerLow}} and {{bumpPowerHigh}}."
+  standing: measured
+  evidence: [tests/test_bump.py::test_long_waves_take_the_optical_time_on_the_bump, tests/test_bump.py::test_the_saddle_state_is_the_vacuum_on_the_metric]
+  status: checked
+  uses: [bump.saddle, space.waves]
+scaling.odd:
+  statement: "On odd XXZ rings of {{xxzOddFirstCells}} and {{xxzOddLastCells}} cells at anisotropies from {{xxzOddDeltaLeast}} to {{xxzOddDeltaMost}}, the other cells' optimal states, read on their weighted Hamiltonian's ground level of magnetization plus or minus one, give the deepened cell's spin a positive expectation on {{xxzOddDropped}} of the {{xxzOddRings}}, which drop out. On the ring of {{xxzKeptCells}} cells at anisotropy {{xxzKeptDelta}} the bounds on their densities fix their share of magnetization plus one at {{xxzKeptShare}}, where the deepened spin is {{xxzKeptSpin}}, so the cell never drops out: at depth {{xxzDeepest}} its weight times the depth is {{xxzKeptProduct}}, and the common value lies {{xxzKeptLift}} above the others'."
+  standing: measured
+  evidence: [tests/test_scaling.py::test_odd_rings_follow_the_others_optimal_states]
+  status: checked
+  uses: [saddle.dropout]
+single.weighting:
+  statement: "At an optimal weighting whose weighted Hamiltonian has a single lowest state, if the floor's second derivatives are negative along every weighting that moves only the places that state holds at the common value and sums to zero, that weighting is the only optimal one; where every optimal weighting lies on a face on which a symmetry pairs the lowest level, as past a drop-out, the same holds with the level read within one sector."
+  standing: derived
+  proof: app:saddle
+  evidence: [tests/test_equations.py::test_the_floor_curves_as_its_second_differences_say, tests/test_unique.py::test_the_readings_ring_is_certified_before_its_drop_out]
+  unformalized: "The proof uses second-order perturbation theory of a single eigenvalue, analytic in the weighting, which Mathlib does not yet state for matrices."
+  status: checked
+  uses: [saddle.conditions, saddle.forbids]
+unique.catalogue:
+  statement: "Counting each catalogue model before and after its cell is deepened, the certificate of a single lowest level and negative curvature holds in {{uniqueCertified}} of {{uniqueModels}}; in {{uniqueNarrow}} more each weight spreads by less than {{uniqueSpreadBound}} over the weightings within {{uniqueNear}} of the common value; in {{uniqueWide}} some weight spreads wider, the optimal weightings forming a set wherever two places each hold the common value alone, as in every open Ising chain and every Ising star before any cell is deepened."
+  standing: measured
+  evidence: [tests/test_unique.py::test_the_certificate_and_the_spreads_sort_every_model, tests/test_unique.py::test_every_open_ising_chain_and_star_has_a_set_of_optima]
+  status: checked
+  uses: [single.weighting]
+coldest.symmetric:
+  statement: "Where a unitary maps the densities onto one another by a permutation of the places, and the densities with the identity are linearly independent, the coldest equilibrium's multipliers are unchanged by the permutation, so their proportions tend to the one optimal weighting it leaves unchanged, where there is only one."
+  standing: derived
+  proof: app:coldest
+  evidence: [tests/test_unique.py::test_the_open_chains_coldest_proportions_stay_symmetric_and_close_on_the_even_split]
+  unformalized: "The proof uses maximum-entropy duality for density matrices, which Mathlib does not yet state, as Proposition prop:coldest does."
+  status: checked
+  uses: [equilibrium.coldest]
+coldest.chain:
+  statement: "On the open transverse-field chain of {{coldestChainCells}} cells, whose optimal weightings form a segment, the proportions of the coldest equilibrium's multipliers keep their two ends equal, each end rising from {{coldestChainFirstEnd}} to {{coldestChainLastEnd}} as the bound's height above the common value falls from {{coldestFirstGap}} to {{coldestLastGap}}."
+  standing: measured
+  evidence: [tests/test_unique.py::test_the_open_chains_coldest_proportions_stay_symmetric_and_close_on_the_even_split]
+  status: checked
+  uses: [coldest.symmetric]
+depths.free:
+  statement: "On transverse-field rings of {{largeSmallest}} to {{largeLargest}} cells, the other cells' optimum found by free fermions, each certified by the bracket to within {{largeGapBound}}, gives drop-out depths that meet the sequential quadratic ones to within {{largeAgreementBound}} up to {{largeSharedLargest}} cells and rise to {{largeDepthLast}}, each doubling of the size adding about {{largeDoublingShare}} of what the one before added; at every size the even sector's lowest level is single and the other cells' floor curves down in every direction at their optimum; a fit mu_inf - a n^-p puts the limit at {{largeLimit}} from {{largeFitFrom}} cells, with p = {{largePower}}, and at {{largeLimitLate}} from {{largeFitFromLate}}."
+  standing: measured
+  evidence: [tests/test_largedrop.py::test_free_fermions_meet_the_sequential_quadratic_depths, tests/test_largedrop.py::test_the_closed_forms_hypotheses_hold_at_every_size, tests/test_largedrop.py::test_the_depth_rises_by_halving_steps]
+  status: checked
+  uses: [ring.threshold]
+bump.width:
+  statement: "Over {{bumpSweepCount}} critical transverse-field rings of {{bumpSweepCellsLeast}} to {{bumpSweepCellsMost}} cells whose couplings vary as 1 + eps cos(2 pi x / n), eps from {{bumpSweepEpsLeast}} to {{bumpSweepEpsMost}}, each saddle certified to within {{bumpSweepGapBound}}: on the {{bumpFitCount}} rings where eps is at least {{bumpResponse}} times the uniform floor's flattest curvature, the width of the weights' bump at half height grows as the size to the power {{bumpCellsPower}} and eps to the power {{bumpEpsPower}}, lying between {{bumpScaleLeast}} and {{bumpScaleMost}} times (n^2/eps)^(1/4); where eps is at most {{bumpGentleResponse}} times it, the bump spans {{bumpGentleShareLeast}} to {{bumpGentleShareMost}} of the ring."
+  standing: measured
+  evidence: [tests/test_bump.py::test_the_width_grows_as_the_fourth_root_of_size_squared_over_variation]
+  status: checked
+  uses: [bump.saddle]

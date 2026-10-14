@@ -1,0 +1,130 @@
+{
+  "_provenance": {
+    "config": {
+      "cells": 1500,
+      "entropy_cells": 300,
+      "start": 300,
+      "step": 0.3,
+      "stop": 1350,
+      "times": 3000,
+      "widths": [
+        20,
+        40
+      ],
+      "zero_from": 1000,
+      "zero_to": [
+        400,
+        100
+      ]
+    },
+    "golden_sha256": "c86ab73cdd663831597b9954d805886139e2292a694237bd02f7290ae20c1562",
+    "grade": "quick",
+    "machine": {
+      "cpus": 28,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "python": "3.14.7",
+      "workers": 1
+    },
+    "seconds": 57.014
+  },
+  "entanglement": {
+    "falling": {
+      "miss": 0.00019327535623914205,
+      "optical_miss": 0.1270761392532801,
+      "power": 0.9996
+    },
+    "steps": {
+      "miss": 0.0001720175845441041,
+      "optical_miss": 0.05778107338615002,
+      "power": 1.0001
+    },
+    "well": {
+      "miss": 0.0010509945668477627,
+      "optical_miss": 0.07512206012176981,
+      "power": 1.0006000000000002
+    }
+  },
+  "step": {
+    "down": 0.02886101120297492,
+    "up": 0.028761814190134127
+  },
+  "waves": {
+    "falling": [
+      {
+        "measured": 2219.4874408894534,
+        "optical": 2213.8785126796406,
+        "width": 20
+      },
+      {
+        "local_speed_gap": 0.0017712723910865424,
+        "measured": 2214.5976446503373,
+        "optical": 2213.8785126796406,
+        "width": 40
+      }
+    ],
+    "uniform": [
+      {
+        "measured": 525.0820376590253,
+        "optical": 525.0,
+        "width": 20
+      },
+      {
+        "local_speed_gap": 3.918228048860328e-05,
+        "measured": 525.0205085253615,
+        "optical": 525.0,
+        "width": 40
+      }
+    ],
+    "well": [
+      {
+        "measured": 836.7208702870885,
+        "optical": 835.7338608857009,
+        "width": 20
+      },
+      {
+        "local_speed_gap": 0.010948762101197218,
+        "measured": 835.9806119815177,
+        "optical": 835.7338608857009,
+        "width": 40
+      }
+    ]
+  },
+  "zero": {
+    "rows": [
+      {
+        "distance": 400,
+        "law": 686.7599035396793,
+        "measured": 686.8243364636014,
+        "width": 20
+      },
+      {
+        "distance": 100,
+        "law": 1725.7875271990376,
+        "measured": 1730.673712988108,
+        "width": 20
+      },
+      {
+        "nearest": 54.414869928675216,
+        "width": 20
+      },
+      {
+        "distance": 400,
+        "law": 686.7599035396793,
+        "measured": 686.5752935127331,
+        "width": 40
+      },
+      {
+        "distance": 100,
+        "law": 1725.7875271990376,
+        "measured": 1725.9196995099571,
+        "width": 40
+      },
+      {
+        "nearest": 56.19899513675841,
+        "width": 40
+      }
+    ],
+    "slope": 0.00066711140760507
+  }
+}

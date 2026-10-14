@@ -1,0 +1,29 @@
+% GENERATED from the paper's sources; edit those, not this file.
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{orcidlink}
+\makeatletter
+\providecommand\repokitrefpage[2]{}
+\providecommand\repokitreferencespage[1]{}
+\def\repokit@refpage#1{\protected@write\@auxout{}{\string\repokitrefpage{#1}{\thepage}}}
+\AtBeginDocument{%
+  \NewCommandCopy\repokit@ref\ref
+  \def\repokit@plainref#1{\repokit@refpage{#1}\repokit@ref{#1}}%
+  \def\repokit@starref#1{\repokit@refpage{#1}\repokit@ref*{#1}}%
+  \DeclareRobustCommand\ref{\@ifstar\repokit@starref\repokit@plainref}%
+}
+\newmarks\repokit@marks
+\newif\ifrepokit@found
+\def\repokit@begins{references}
+\AddToHook{env/thebibliography/before}{\clearpage\marks\repokit@marks{references}}
+\AddToHook{shipout/before}{%
+  \ifrepokit@found\else
+    \edef\repokit@mark{\botmarks\repokit@marks}%
+    \ifx\repokit@mark\repokit@begins
+      \immediate\write\@auxout{\string\repokitreferencespage{\thepage}}\global\repokit@foundtrue
+    \fi
+  \fi}
+\makeatother
+\AddToHook{cmd/appendix/before}{\clearpage}
+\newcommand{\matchedreadings}{a static lapse's redshift, Tolman's relation in equilibrium, the metric conformal field theory gives a critical chain whose couplings vary in space, a horizon's temperature as a slope over $2\pi$, and shadow prices for the places' bounds}

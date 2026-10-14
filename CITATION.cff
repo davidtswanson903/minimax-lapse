@@ -1,0 +1,1052 @@
+# GENERATED from the paper's sources; edit those, not this file.
+cff-version: 1.2.0
+message: If you use this repository, please cite it as below.
+title: 'minimax-lapse: in a closed quantum system, the minimax of local energy densities fixes a lapse'
+type: software
+authors:
+- family-names: Swanson
+  given-names: David T.
+  orcid: https://orcid.org/0009-0003-0580-6476
+version: 1.0.4
+date-released: '2026-10-14'
+license: MIT
+repository-code: https://github.com/davidtswanson903/minimax-lapse
+keywords:
+- local energy density
+- local Hamiltonian
+- ground state
+- closed quantum system
+- minimax theorem
+- semidefinite programming
+- complementary slackness
+- shadow price
+- lapse function
+- canonical gravity
+abstract: 'How low can a closed quantum system hold the energy at every place at once, and when no clock
+  outside it fixes a lapse, what does? The least achievable maximum of a closed quantum system''s local
+  energy densities equals the greatest lowest eigenvalue of its Hamiltonian reweighted by place, and the
+  weights attaining it vanish wherever a place''s density falls short of that value. In symbols, e^* =
+  min_ρ max_x Tr(ρ D_x) = max_(N∈Δ) λ_(min)(Σ_x N_x D_x), a case of the minimax theorem, with D_x the
+  density at place x, N a weighting. Like the lapse of canonical gravity, which a slicing condition fixes,
+  these weights are fixed by a rule for dividing the energy among the places, one that names no place;
+  once it is applied, the energies fix them. Under a premise stated with them, they hold a static lapse''s
+  place: the evolution they weight leaves the optimal state stationary, each weighs its place''s energy
+  as a lapse weighs local energy seen from afar, and they vanish wherever a place falls short. A deepened
+  place drops out exactly when the others, optimized without it, hold it at or below their common value,
+  which on a ring of 6 qubits happens at depth 0.295. It stays in on an even ring that conserves magnetization,
+  under stated hypotheses and to first order in a weak field. Every general claim holds in 120 computed
+  models. So one weighting certifies how low every local energy can be held and names the places that
+  hold it up, and the same weighting is a lapse that the energies, once divided among the places, fix
+  by themselves, zero wherever a place falls short. Where a place falls short of the common value, its
+  clock stops.'
+references:
+- type: article
+  authors:
+  - family-names: von Neumann
+    given-names: J.
+  title: Zur Theorie der Gesellschaftsspiele
+  journal: Mathematische Annalen
+  year: 1928
+  volume: 100
+  start: 295
+  end: 320
+  doi: 10.1007/BF01448847
+  url: https://doi.org/10.1007/BF01448847
+- type: article
+  authors:
+  - family-names: Sion
+    given-names: Maurice
+  title: On general minimax theorems
+  journal: Pacific Journal of Mathematics
+  year: 1958
+  volume: 8
+  start: 171
+  end: 176
+  doi: 10.2140/pjm.1958.8.171
+  url: https://doi.org/10.2140/pjm.1958.8.171
+- type: article
+  authors:
+  - family-names: Arnowitt
+    given-names: R.
+  - family-names: Deser
+    given-names: S.
+  - family-names: Misner
+    given-names: C. W.
+  title: 'Republication of: The dynamics of general relativity'
+  journal: General Relativity and Gravitation
+  year: 2008
+  volume: 40
+  start: 1997
+  end: 2027
+  doi: 10.1007/s10714-008-0661-1
+  url: https://arxiv.org/abs/gr-qc/0405109
+- type: article
+  authors:
+  - family-names: Diamond
+    given-names: Steven
+  - family-names: Boyd
+    given-names: Stephen
+  title: 'CVXPY: A Python-embedded modeling language for convex optimization'
+  journal: Journal of Machine Learning Research
+  year: 2016
+  volume: 17
+  start: 1
+  end: 5
+  url: https://arxiv.org/abs/1603.00943
+- type: generic
+  authors:
+  - family-names: Goulart
+    given-names: Paul J.
+  - family-names: Chen
+    given-names: Yuwen
+  title: 'Clarabel: An interior-point solver for conic programs with quadratic objectives'
+  year: 2024
+  url: https://arxiv.org/abs/2405.12762
+- type: generic
+  authors:
+  - family-names: Giorgi
+    given-names: Giorgio
+  - family-names: Kjeldsen
+    given-names: Tinne Hoff
+  title: 'A historical view of nonlinear programming: traces and emergence'
+  publisher:
+    name: Birkhäuser
+  year: 2014
+  start: 1
+  end: 43
+  doi: 10.1007/978-3-0348-0439-4_1
+  url: https://doi.org/10.1007/978-3-0348-0439-4_1
+- type: article
+  authors:
+  - family-names: Danskin
+    given-names: John M.
+  title: The theory of max-min, with applications
+  journal: SIAM Journal on Applied Mathematics
+  year: 1966
+  volume: 14
+  start: 641
+  end: 664
+  doi: 10.1137/0114053
+  url: https://doi.org/10.1137/0114053
+- type: book
+  authors:
+  - family-names: Boyd
+    given-names: Stephen
+  - family-names: Vandenberghe
+    given-names: Lieven
+  title: Convex Optimization
+  publisher:
+    name: Cambridge University Press
+  year: 2004
+  doi: 10.1017/CBO9780511804441
+  url: https://doi.org/10.1017/CBO9780511804441
+- type: article
+  authors:
+  - family-names: Kantorovich
+    given-names: L. V.
+  title: Mathematical methods of organizing and planning production
+  journal: Management Science
+  year: 1960
+  volume: 6
+  start: 366
+  end: 422
+  doi: 10.1287/mnsc.6.4.366
+  url: https://doi.org/10.1287/mnsc.6.4.366
+- type: article
+  authors:
+  - family-names: Estabrook
+    given-names: F.
+  - family-names: Wahlquist
+    given-names: H.
+  - family-names: Christensen
+    given-names: S.
+  - family-names: DeWitt
+    given-names: B.
+  - family-names: Smarr
+    given-names: L.
+  - family-names: Tsiang
+    given-names: E.
+  title: Maximally slicing a black hole
+  journal: Physical Review D
+  year: 1973
+  volume: 7
+  start: 2814
+  end: 2817
+  doi: 10.1103/PhysRevD.7.2814
+  url: https://doi.org/10.1103/PhysRevD.7.2814
+- type: generic
+  authors:
+  - family-names: Gourgoulhon
+    given-names: Éric
+  title: 3+1 formalism and bases of numerical relativity
+  year: 2007
+  url: https://arxiv.org/abs/gr-qc/0703035
+- type: article
+  authors:
+  - family-names: Henneaux
+    given-names: M.
+  - family-names: Teitelboim
+    given-names: C.
+  title: The cosmological constant and general covariance
+  journal: Physics Letters B
+  year: 1989
+  volume: 222
+  start: 195
+  end: 199
+  doi: 10.1016/0370-2693(89)91251-3
+  url: https://doi.org/10.1016/0370-2693(89)91251-3
+- type: article
+  authors:
+  - family-names: Tolman
+    given-names: Richard C.
+  title: On the weight of heat and thermal equilibrium in general relativity
+  journal: Physical Review
+  year: 1930
+  volume: 35
+  start: 904
+  end: 924
+  doi: 10.1103/PhysRev.35.904
+  url: https://doi.org/10.1103/PhysRev.35.904
+- type: article
+  authors:
+  - family-names: Page
+    given-names: Don N.
+  - family-names: Wootters
+    given-names: William K.
+  title: 'Evolution without evolution: Dynamics described by stationary observables'
+  journal: Physical Review D
+  year: 1983
+  volume: 27
+  start: 2885
+  end: 2892
+  doi: 10.1103/PhysRevD.27.2885
+  url: https://doi.org/10.1103/PhysRevD.27.2885
+- type: article
+  authors:
+  - family-names: Joshi
+    given-names: Manoj K.
+  - family-names: Kokail
+    given-names: Christian
+  - family-names: van Bijnen
+    given-names: Rick
+  - family-names: Kranzl
+    given-names: Florian
+  - family-names: Zache
+    given-names: Torsten V.
+  - family-names: Blatt
+    given-names: Rainer
+  - family-names: Roos
+    given-names: Christian F.
+  - family-names: Zoller
+    given-names: Peter
+  title: Exploring large-scale entanglement in quantum simulation
+  journal: Nature
+  year: 2023
+  volume: 624
+  start: 539
+  end: 544
+  doi: 10.1038/s41586-023-06768-0
+  url: https://doi.org/10.1038/s41586-023-06768-0
+- type: article
+  authors:
+  - family-names: Kokail
+    given-names: Christian
+  - family-names: van Bijnen
+    given-names: Rick
+  - family-names: Elben
+    given-names: Andreas
+  - family-names: Vermersch
+    given-names: Benoît
+  - family-names: Zoller
+    given-names: Peter
+  title: Entanglement Hamiltonian tomography in quantum simulation
+  journal: Nature Physics
+  year: 2021
+  volume: 17
+  start: 936
+  end: 942
+  doi: 10.1038/s41567-021-01260-w
+  url: https://doi.org/10.1038/s41567-021-01260-w
+- type: article
+  authors:
+  - family-names: Jaynes
+    given-names: E. T.
+  title: Information theory and statistical mechanics
+  journal: Physical Review
+  year: 1957
+  volume: 106
+  start: 620
+  end: 630
+  doi: 10.1103/PhysRev.106.620
+  url: https://doi.org/10.1103/PhysRev.106.620
+- type: article
+  authors:
+  - family-names: Jaynes
+    given-names: E. T.
+  title: Information theory and statistical mechanics. II
+  journal: Physical Review
+  year: 1957
+  volume: 108
+  start: 171
+  end: 190
+  doi: 10.1103/PhysRev.108.171
+  url: https://doi.org/10.1103/PhysRev.108.171
+- type: article
+  authors:
+  - family-names: Anderson
+    given-names: P. W.
+  title: Limits on the energy of the antiferromagnetic ground state
+  journal: Physical Review
+  year: 1951
+  volume: 83
+  start: 1260
+  doi: 10.1103/PhysRev.83.1260
+  url: https://doi.org/10.1103/PhysRev.83.1260
+- type: article
+  authors:
+  - family-names: Hikihara
+    given-names: Toshiya
+  - family-names: Nishino
+    given-names: Tomotoshi
+  title: Connecting distant ends of one-dimensional critical systems by a sine-square deformation
+  journal: Physical Review B
+  year: 2011
+  volume: 83
+  start: 060414(R)
+  doi: 10.1103/PhysRevB.83.060414
+  url: https://arxiv.org/abs/1012.0472
+- type: article
+  authors:
+  - family-names: Dalmonte
+    given-names: M.
+  - family-names: Vermersch
+    given-names: B.
+  - family-names: Zoller
+    given-names: P.
+  title: Quantum simulation and spectroscopy of entanglement Hamiltonians
+  journal: Nature Physics
+  year: 2018
+  volume: 14
+  start: 827
+  end: 831
+  doi: 10.1038/s41567-018-0151-7
+  url: https://arxiv.org/abs/1707.04455
+- type: article
+  authors:
+  - family-names: Connes
+    given-names: A.
+  - family-names: Rovelli
+    given-names: C.
+  title: Von Neumann algebra automorphisms and time-thermodynamics relation in generally covariant quantum
+    theories
+  journal: Classical and Quantum Gravity
+  year: 1994
+  volume: 11
+  start: 2899
+  end: 2917
+  doi: 10.1088/0264-9381/11/12/007
+  url: https://doi.org/10.1088/0264-9381/11/12/007
+- type: article
+  authors:
+  - family-names: Rovelli
+    given-names: Carlo
+  - family-names: Smerlak
+    given-names: Matteo
+  title: 'Thermal time and Tolman-Ehrenfest effect: temperature as the speed of time'
+  journal: Classical and Quantum Gravity
+  year: 2011
+  volume: 28
+  start: 75007
+  doi: 10.1088/0264-9381/28/7/075007
+  url: https://doi.org/10.1088/0264-9381/28/7/075007
+- type: article
+  authors:
+  - family-names: Dubail
+    given-names: Jerome
+  - family-names: Stéphan
+    given-names: Jean-Marie
+  - family-names: Viti
+    given-names: Jacopo
+  - family-names: Calabrese
+    given-names: Pasquale
+  title: 'Conformal field theory for inhomogeneous one-dimensional quantum systems: the example of non-interacting
+    Fermi gases'
+  journal: SciPost Physics
+  year: 2017
+  volume: 2
+  start: 2
+  doi: 10.21468/SciPostPhys.2.1.002
+  url: https://doi.org/10.21468/SciPostPhys.2.1.002
+- type: article
+  authors:
+  - family-names: Rodríguez-Laguna
+    given-names: Javier
+  - family-names: Tarruell
+    given-names: Leticia
+  - family-names: Lewenstein
+    given-names: Maciej
+  - family-names: Celi
+    given-names: Alessio
+  title: Synthetic Unruh effect in cold atoms
+  journal: Physical Review A
+  year: 2017
+  volume: 95
+  start: 13627
+  doi: 10.1103/PhysRevA.95.013627
+  url: https://doi.org/10.1103/PhysRevA.95.013627
+- type: article
+  authors:
+  - family-names: Kandala
+    given-names: Abhinav
+  - family-names: Mezzacapo
+    given-names: Antonio
+  - family-names: Temme
+    given-names: Kristan
+  - family-names: Takita
+    given-names: Maika
+  - family-names: Brink
+    given-names: Markus
+  - family-names: Chow
+    given-names: Jerry M.
+  - family-names: Gambetta
+    given-names: Jay M.
+  title: Hardware-efficient variational quantum eigensolver for small molecules and quantum magnets
+  journal: Nature
+  year: 2017
+  volume: 549
+  start: 242
+  end: 246
+  doi: 10.1038/nature23879
+  url: https://arxiv.org/abs/1704.05018
+- type: article
+  authors:
+  - family-names: Overton
+    given-names: Michael L.
+  title: On minimizing the maximum eigenvalue of a symmetric matrix
+  journal: SIAM Journal on Matrix Analysis and Applications
+  year: 1988
+  volume: 9
+  start: 256
+  end: 268
+  doi: 10.1137/0609021
+  url: https://doi.org/10.1137/0609021
+- type: article
+  authors:
+  - family-names: Lewis
+    given-names: Adrian S.
+  - family-names: Overton
+    given-names: Michael L.
+  title: Eigenvalue optimization
+  journal: Acta Numerica
+  year: 1996
+  volume: 5
+  start: 149
+  end: 190
+  doi: 10.1017/S0962492900002646
+  url: https://doi.org/10.1017/S0962492900002646
+- type: article
+  authors:
+  - family-names: Barthel
+    given-names: Thomas
+  - family-names: Hübener
+    given-names: Robert
+  title: Solving condensed-matter ground-state problems by semidefinite relaxations
+  journal: Physical Review Letters
+  year: 2012
+  volume: 108
+  start: 200404
+  doi: 10.1103/PhysRevLett.108.200404
+  url: https://doi.org/10.1103/PhysRevLett.108.200404
+- type: article
+  authors:
+  - family-names: Baumgratz
+    given-names: Tillmann
+  - family-names: Plenio
+    given-names: Martin B.
+  title: Lower bounds for ground states of condensed matter systems
+  journal: New Journal of Physics
+  year: 2012
+  volume: 14
+  start: 23027
+  doi: 10.1088/1367-2630/14/2/023027
+  url: https://doi.org/10.1088/1367-2630/14/2/023027
+- type: article
+  authors:
+  - family-names: Blöte
+    given-names: H. W. J.
+  - family-names: Cardy
+    given-names: John L.
+  - family-names: Nightingale
+    given-names: M. P.
+  title: Conformal invariance, the central charge, and universal finite-size amplitudes at criticality
+  journal: Physical Review Letters
+  year: 1986
+  volume: 56
+  start: 742
+  end: 745
+  doi: 10.1103/PhysRevLett.56.742
+  url: https://doi.org/10.1103/PhysRevLett.56.742
+- type: article
+  authors:
+  - family-names: Affleck
+    given-names: Ian
+  title: Universal term in the free energy at a critical point and the conformal anomaly
+  journal: Physical Review Letters
+  year: 1986
+  volume: 56
+  start: 746
+  end: 748
+  doi: 10.1103/PhysRevLett.56.746
+  url: https://doi.org/10.1103/PhysRevLett.56.746
+- type: article
+  authors:
+  - family-names: Calabrese
+    given-names: Pasquale
+  - family-names: Cardy
+    given-names: John
+  title: Entanglement entropy and quantum field theory
+  journal: 'Journal of Statistical Mechanics: Theory and Experiment'
+  year: 2004
+  volume: 2004
+  start: P06002
+  doi: 10.1088/1742-5468/2004/06/P06002
+  url: https://arxiv.org/abs/hep-th/0405152
+- type: article
+  authors:
+  - family-names: Bisognano
+    given-names: Joseph J.
+  - family-names: Wichmann
+    given-names: Eyvind H.
+  title: On the duality condition for quantum fields
+  journal: Journal of Mathematical Physics
+  year: 1976
+  volume: 17
+  start: 303
+  end: 321
+  doi: 10.1063/1.522898
+  url: https://doi.org/10.1063/1.522898
+- type: article
+  authors:
+  - family-names: Casini
+    given-names: Horacio
+  - family-names: Huerta
+    given-names: Marina
+  - family-names: Myers
+    given-names: Robert C.
+  title: Towards a derivation of holographic entanglement entropy
+  journal: Journal of High Energy Physics
+  year: 2011
+  volume: 2011
+  start: 36
+  doi: 10.1007/JHEP05(2011)036
+  url: https://arxiv.org/abs/1102.0440
+- type: article
+  authors:
+  - family-names: Gibbons
+    given-names: G. W.
+  - family-names: Hawking
+    given-names: S. W.
+  title: Cosmological event horizons, thermodynamics, and particle creation
+  journal: Physical Review D
+  year: 1977
+  volume: 15
+  start: 2738
+  end: 2751
+  doi: 10.1103/PhysRevD.15.2738
+  url: https://doi.org/10.1103/PhysRevD.15.2738
+- type: article
+  authors:
+  - family-names: Peschel
+    given-names: Ingo
+  title: Calculation of reduced density matrices from correlation functions
+  journal: 'Journal of Physics A: Mathematical and General'
+  year: 2003
+  volume: 36
+  start: L205
+  end: L208
+  doi: 10.1088/0305-4470/36/14/101
+  url: https://arxiv.org/abs/cond-mat/0212631
+- type: article
+  authors:
+  - family-names: Collaboration}
+    given-names: '{Planck'
+  - family-names: Aghanim
+    given-names: N.
+  - family-names: others
+    given-names: ''
+  title: Planck 2018 results. VI. Cosmological parameters
+  journal: Astronomy & Astrophysics
+  year: 2020
+  volume: 641
+  start: A6
+  doi: 10.1051/0004-6361/201833910
+  url: https://arxiv.org/abs/1807.06209
+- type: article
+  authors:
+  - family-names: Bell
+    given-names: J. S.
+  title: On the Einstein Podolsky Rosen paradox
+  journal: Physics Physique Fizika
+  year: 1964
+  volume: 1
+  start: 195
+  end: 200
+  doi: 10.1103/PhysicsPhysiqueFizika.1.195
+  url: https://doi.org/10.1103/PhysicsPhysiqueFizika.1.195
+- type: article
+  authors:
+  - family-names: Clauser
+    given-names: John F.
+  - family-names: Horne
+    given-names: Michael A.
+  - family-names: Shimony
+    given-names: Abner
+  - family-names: Holt
+    given-names: Richard A.
+  title: Proposed experiment to test local hidden-variable theories
+  journal: Physical Review Letters
+  year: 1969
+  volume: 23
+  start: 880
+  end: 884
+  doi: 10.1103/PhysRevLett.23.880
+  url: https://doi.org/10.1103/PhysRevLett.23.880
+- type: article
+  authors:
+  - family-names: Cirel'son
+    given-names: B. S.
+  title: Quantum generalizations of Bell's inequality
+  journal: Letters in Mathematical Physics
+  year: 1980
+  volume: 4
+  start: 93
+  end: 100
+  doi: 10.1007/BF00417500
+  url: https://doi.org/10.1007/BF00417500
+- type: article
+  authors:
+  - family-names: Fine
+    given-names: Arthur
+  title: Hidden variables, joint probability, and the Bell inequalities
+  journal: Physical Review Letters
+  year: 1982
+  volume: 48
+  start: 291
+  end: 295
+  doi: 10.1103/PhysRevLett.48.291
+  url: https://doi.org/10.1103/PhysRevLett.48.291
+- type: article
+  authors:
+  - family-names: Abramsky
+    given-names: Samson
+  - family-names: Brandenburger
+    given-names: Adam
+  title: The sheaf-theoretic structure of non-locality and contextuality
+  journal: New Journal of Physics
+  year: 2011
+  volume: 13
+  start: 113036
+  doi: 10.1088/1367-2630/13/11/113036
+  url: https://arxiv.org/abs/1102.0264
+- type: article
+  authors:
+  - family-names: Abramsky
+    given-names: Samson
+  - family-names: Barbosa
+    given-names: Rui Soares
+  - family-names: Mansfield
+    given-names: Shane
+  title: Contextual fraction as a measure of contextuality
+  journal: Physical Review Letters
+  year: 2017
+  volume: 119
+  start: 50504
+  doi: 10.1103/PhysRevLett.119.050504
+  url: https://arxiv.org/abs/1705.07918
+- type: article
+  authors:
+  - family-names: Brukner
+    given-names: Caslav
+  title: A no-go theorem for observer-independent facts
+  journal: Entropy
+  year: 2018
+  volume: 20
+  start: 350
+  doi: 10.3390/e20050350
+  url: https://arxiv.org/abs/1804.00749
+- type: article
+  authors:
+  - family-names: Bong
+    given-names: Kok-Wei
+  - family-names: Utreras-Alarcón
+    given-names: Aníbal
+  - family-names: Ghafari
+    given-names: Farzad
+  - family-names: Liang
+    given-names: Yeong-Cherng
+  - family-names: Tischler
+    given-names: Nora
+  - family-names: Cavalcanti
+    given-names: Eric G.
+  - family-names: Pryde
+    given-names: Geoff J.
+  - family-names: Wiseman
+    given-names: Howard M.
+  title: A strong no-go theorem on the Wigner's friend paradox
+  journal: Nature Physics
+  year: 2020
+  volume: 16
+  start: 1199
+  end: 1205
+  doi: 10.1038/s41567-020-0990-x
+  url: https://arxiv.org/abs/1907.05607
+- type: article
+  authors:
+  - family-names: Feynman
+    given-names: Richard P.
+  title: Quantum mechanical computers
+  journal: Foundations of Physics
+  year: 1986
+  volume: 16
+  start: 507
+  end: 531
+  doi: 10.1007/BF01886518
+  url: https://doi.org/10.1007/BF01886518
+- type: book
+  authors:
+  - family-names: Kitaev
+    given-names: A. Yu.
+  - family-names: Shen
+    given-names: A. H.
+  - family-names: Vyalyi
+    given-names: M. N.
+  title: Classical and Quantum Computation
+  publisher:
+    name: American Mathematical Society
+  year: 2002
+  doi: 10.1090/gsm/047
+  url: https://doi.org/10.1090/gsm/047
+- type: article
+  authors:
+  - family-names: Eisler
+    given-names: Viktor
+  - family-names: Tonni
+    given-names: Erik
+  - family-names: Peschel
+    given-names: Ingo
+  title: On the continuum limit of the entanglement Hamiltonian
+  journal: 'Journal of Statistical Mechanics: Theory and Experiment'
+  year: 2019
+  volume: 2019
+  start: 73101
+  url: https://arxiv.org/abs/1902.04474
+- type: article
+  authors:
+  - family-names: Smith
+    given-names: Alexander R. H.
+  - family-names: Ahmadi
+    given-names: Mehdi
+  title: Quantum clocks observe classical and quantum time dilation
+  journal: Nature Communications
+  year: 2020
+  volume: 11
+  start: 5360
+  url: https://arxiv.org/abs/1904.12390
+- type: article
+  authors:
+  - family-names: Höhn
+    given-names: Philipp A.
+  - family-names: Smith
+    given-names: Alexander R. H.
+  - family-names: Lock
+    given-names: Maximilian P. E.
+  title: Trinity of relational quantum dynamics
+  journal: Physical Review D
+  year: 2021
+  volume: 104
+  start: 66001
+  url: https://arxiv.org/abs/1912.00033
+- type: article
+  authors:
+  - family-names: Thiemann
+    given-names: Thomas
+  title: 'The Phoenix Project: master constraint programme for loop quantum gravity'
+  journal: Classical and Quantum Gravity
+  year: 2006
+  volume: 23
+  start: 2211
+  end: 2248
+  url: https://arxiv.org/abs/gr-qc/0305080
+- type: article
+  authors:
+  - family-names: Zauner
+    given-names: V.
+  - family-names: Draxler
+    given-names: D.
+  - family-names: Vanderstraeten
+    given-names: L.
+  - family-names: Haegeman
+    given-names: J.
+  - family-names: Verstraete
+    given-names: F.
+  title: Symmetry breaking and the geometry of reduced density matrices
+  journal: New Journal of Physics
+  year: 2016
+  volume: 18
+  start: 113033
+  url: https://arxiv.org/abs/1412.7642
+- type: article
+  authors:
+  - family-names: Chen
+    given-names: Jianxin
+  - family-names: Ji
+    given-names: Zhengfeng
+  - family-names: Li
+    given-names: Chi-Kwong
+  - family-names: Poon
+    given-names: Yiu-Tung
+  - family-names: Shen
+    given-names: Yi
+  - family-names: Yu
+    given-names: Nengkun
+  - family-names: Zeng
+    given-names: Bei
+  - family-names: Zhou
+    given-names: Duanlu
+  title: Discontinuity of maximum entropy inference and quantum phase transitions
+  journal: New Journal of Physics
+  year: 2015
+  volume: 17
+  start: 83019
+  url: https://arxiv.org/abs/1406.5046
+- type: article
+  authors:
+  - family-names: Bertotti
+    given-names: B.
+  - family-names: Iess
+    given-names: L.
+  - family-names: Tortora
+    given-names: P.
+  title: A test of general relativity using radio links with the Cassini spacecraft
+  journal: Nature
+  year: 2003
+  volume: 425
+  start: 374
+  end: 376
+  doi: 10.1038/nature01997
+  url: https://doi.org/10.1038/nature01997
+- type: article
+  authors:
+  - family-names: Kempe
+    given-names: Julia
+  - family-names: Kitaev
+    given-names: Alexei
+  - family-names: Regev
+    given-names: Oded
+  title: The complexity of the local Hamiltonian problem
+  journal: SIAM Journal on Computing
+  year: 2006
+  volume: 35
+  start: 1070
+  end: 1097
+  url: https://arxiv.org/abs/quant-ph/0406180
+- type: article
+  authors:
+  - family-names: Alhambra
+    given-names: Alvaro M.
+  - family-names: Styliaris
+    given-names: Georgios
+  - family-names: Rodriguez-Briones
+    given-names: Nayeli A.
+  - family-names: Sikora
+    given-names: Jamie
+  - family-names: Martin-Martinez
+    given-names: Eduardo
+  title: Fundamental limitations to local energy extraction in quantum systems
+  journal: Physical Review Letters
+  year: 2019
+  volume: 123
+  start: 190601
+  doi: 10.1103/PhysRevLett.123.190601
+  url: https://arxiv.org/abs/1902.02357
+- type: generic
+  authors:
+  - family-names: Hotta
+    given-names: Masahiro
+  title: 'Quantum energy teleportation: an introductory review'
+  year: 2011
+  url: https://arxiv.org/abs/1101.3954
+- type: article
+  authors:
+  - family-names: Efron
+    given-names: B.
+  - family-names: Stein
+    given-names: C.
+  title: The jackknife estimate of variance
+  journal: The Annals of Statistics
+  year: 1981
+  volume: 9
+  start: 586
+  end: 596
+  doi: 10.1214/aos/1176345462
+  url: https://doi.org/10.1214/aos/1176345462
+- type: article
+  authors:
+  - family-names: Zych
+    given-names: Magdalena
+  - family-names: Costa
+    given-names: Fabio
+  - family-names: Pikovski
+    given-names: Igor
+  - family-names: Brukner
+    given-names: Caslav
+  title: Quantum interferometric visibility as a witness of general relativistic proper time
+  journal: Nature Communications
+  year: 2011
+  volume: 2
+  start: 505
+  doi: 10.1038/ncomms1498
+  url: https://arxiv.org/abs/1105.4531
+- type: article
+  authors:
+  - family-names: Castro-Ruiz
+    given-names: Esteban
+  - family-names: Giacomini
+    given-names: Flaminia
+  - family-names: Brukner
+    given-names: Caslav
+  title: Entanglement of quantum clocks through gravity
+  journal: Proceedings of the National Academy of Sciences
+  year: 2017
+  volume: 114
+  start: E2303
+  doi: 10.1073/pnas.1616427114
+  url: https://arxiv.org/abs/1507.01955
+- type: article
+  authors:
+  - family-names: Hartmann
+    given-names: Michael
+  - family-names: Mahler
+    given-names: Guenter
+  - family-names: Hess
+    given-names: Ortwin
+  title: Existence of temperature on the nanoscale
+  journal: Physical Review Letters
+  year: 2004
+  volume: 93
+  start: 80402
+  doi: 10.1103/PhysRevLett.93.080402
+  url: https://arxiv.org/abs/quant-ph/0312214
+- type: article
+  authors:
+  - family-names: Kliesch
+    given-names: M.
+  - family-names: Gogolin
+    given-names: C.
+  - family-names: Kastoryano
+    given-names: M. J.
+  - family-names: Riera
+    given-names: A.
+  - family-names: Eisert
+    given-names: J.
+  title: Locality of temperature
+  journal: Physical Review X
+  year: 2014
+  volume: 4
+  start: 31019
+  doi: 10.1103/PhysRevX.4.031019
+  url: https://arxiv.org/abs/1309.0816
+- type: article
+  authors:
+  - family-names: Boada
+    given-names: O.
+  - family-names: Celi
+    given-names: A.
+  - family-names: Latorre
+    given-names: J. I.
+  - family-names: Lewenstein
+    given-names: M.
+  title: Dirac equation for cold atoms in artificial curved spacetimes
+  journal: New Journal of Physics
+  year: 2011
+  volume: 13
+  start: 35002
+  doi: 10.1088/1367-2630/13/3/035002
+  url: https://arxiv.org/abs/1010.1716
+- type: article
+  authors:
+  - family-names: Giudici
+    given-names: G.
+  - family-names: Mendes-Santos
+    given-names: T.
+  - family-names: Calabrese
+    given-names: P.
+  - family-names: Dalmonte
+    given-names: M.
+  title: Entanglement Hamiltonians of lattice models via the Bisognano-Wichmann theorem
+  journal: Physical Review B
+  year: 2018
+  volume: 98
+  start: 134403
+  doi: 10.1103/PhysRevB.98.134403
+  url: https://arxiv.org/abs/1807.01322
+- type: article
+  authors:
+  - family-names: Li
+    given-names: Miao
+  title: A model of holographic dark energy
+  journal: Physics Letters B
+  year: 2004
+  volume: 603
+  start: 1
+  doi: 10.1016/j.physletb.2004.10.014
+  url: https://arxiv.org/abs/hep-th/0403127
+- type: article
+  authors:
+  - family-names: Ollivier
+    given-names: Harold
+  - family-names: Poulin
+    given-names: David
+  - family-names: Zurek
+    given-names: Wojciech H.
+  title: 'Objective properties from subjective quantum states: environment as a witness'
+  journal: Physical Review Letters
+  year: 2004
+  volume: 93
+  start: 220401
+  doi: 10.1103/PhysRevLett.93.220401
+  url: https://arxiv.org/abs/quant-ph/0307229
+- type: article
+  authors:
+  - family-names: Zurek
+    given-names: Wojciech Hubert
+  title: Quantum Darwinism
+  journal: Nature Physics
+  year: 2009
+  volume: 5
+  start: 181
+  end: 188
+  doi: 10.1038/nphys1202
+  url: https://arxiv.org/abs/0903.5082
+- type: article
+  authors:
+  - family-names: Chen
+    given-names: Jianxin
+  - family-names: Guo
+    given-names: Cheng
+  - family-names: Ji
+    given-names: Zhengfeng
+  - family-names: Poon
+    given-names: Yiu-Tung
+  - family-names: Yu
+    given-names: Nengkun
+  - family-names: Zeng
+    given-names: Bei
+  - family-names: Zhou
+    given-names: Jie
+  title: Joint product numerical range and geometry of reduced density matrices
+  journal: Science China Physics, Mechanics and Astronomy
+  year: 2017
+  volume: 60
+  start: 20312
+  url: https://arxiv.org/abs/1606.07422

@@ -1,0 +1,199 @@
+{
+  "_provenance": {
+    "config": {
+      "deep": 2.0,
+      "models": [
+        {
+          "family": "ising",
+          "lattice": "ring",
+          "params": [
+            {
+              "J": 1.0,
+              "g": 1.0
+            }
+          ],
+          "sizes": [
+            3,
+            4
+          ]
+        },
+        {
+          "family": "random",
+          "lattice": "random",
+          "params": [
+            {
+              "seed": 0
+            }
+          ],
+          "sizes": [
+            4
+          ]
+        }
+      ],
+      "ring": {
+        "cells": 4,
+        "depths": [
+          0.0,
+          0.2,
+          1.0
+        ]
+      }
+    },
+    "golden_sha256": "aeef9e6f5c3affd6512b4126bf467b10060eeb1c73ba637e613a74105666ad16",
+    "grade": "quick",
+    "machine": {
+      "cpus": 28,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "python": "3.14.7",
+      "workers": 1
+    },
+    "seconds": 0.322
+  },
+  "models": [
+    {
+      "at": 3,
+      "curvature": -0.08333333333295387,
+      "fails": null,
+      "gap": 0.17863279495408224,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.3533886233929593e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.0017126554540844996,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.06565809680285328,
+      "fails": null,
+      "gap": 0.09945618368983,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.852725332682439e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "spread": 0.0017140364242465012,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.09920500261075738,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -5.722210733321984,
+      "fails": null,
+      "gap": 0.09921995796874739,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 4
+      },
+      "unique": true
+    }
+  ],
+  "rings": [
+    {
+      "at": 4,
+      "curvature": -0.06565809680285328,
+      "fails": null,
+      "gap": 0.09945618368983,
+      "spec": {
+        "J": 1.0,
+        "depth": 0.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.1334566322517692,
+      "fails": null,
+      "gap": 0.03676223066766604,
+      "spec": {
+        "J": 1.0,
+        "depth": 0.2,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.125030638237661e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "spread": 0.00186113264462906,
+      "unique": false
+    }
+  ],
+  "summary": {
+    "fails": {
+      "lowest level not single": 2
+    },
+    "models": 6,
+    "narrow": 2,
+    "unique": 4,
+    "wide": 0
+  }
+}

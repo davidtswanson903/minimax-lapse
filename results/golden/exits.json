@@ -1,0 +1,20 @@
+{
+  "conservation": [
+    {
+      "drop_depth": null,
+      "field": 0.1
+    },
+    {
+      "drop_depth": null,
+      "field": 0.3
+    }
+  ],
+  "degenerate": {
+    "floor": 0.2999999997490281,
+    "largest_multiplier": 0.0
+  },
+  "rotation": {
+    "floor": -1.118033994323976,
+    "ground_per_cell": -1.2160383017597916
+  }
+}

@@ -1,0 +1,4157 @@
+{
+  "_provenance": {
+    "config": {
+      "deep": 2.0,
+      "models": [
+        {
+          "family": "ising",
+          "lattice": "ring",
+          "params": [
+            {
+              "J": 1.0,
+              "g": 0.5
+            },
+            {
+              "J": 1.0,
+              "g": 1.0
+            },
+            {
+              "J": 1.0,
+              "g": 2.0
+            }
+          ],
+          "sizes": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "family": "ising",
+          "lattice": "ring",
+          "params": [
+            {
+              "J": -1.0,
+              "g": 0.5
+            },
+            {
+              "J": -1.0,
+              "g": 1.0
+            },
+            {
+              "J": -1.0,
+              "g": 2.0
+            },
+            {
+              "J": 1.0,
+              "g": 0.5,
+              "h": 0.5
+            },
+            {
+              "J": 1.0,
+              "g": 1.0,
+              "h": 0.5
+            },
+            {
+              "J": 1.0,
+              "g": 2.0,
+              "h": 0.5
+            }
+          ],
+          "sizes": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "family": "ising",
+          "lattice": "chain",
+          "params": [
+            {
+              "J": 1.0,
+              "g": 0.5
+            },
+            {
+              "J": 1.0,
+              "g": 1.0
+            },
+            {
+              "J": 1.0,
+              "g": 2.0
+            },
+            {
+              "J": 1.0,
+              "deep_at": "middle",
+              "g": 0.5
+            },
+            {
+              "J": 1.0,
+              "deep_at": "middle",
+              "g": 1.0
+            },
+            {
+              "J": 1.0,
+              "deep_at": "middle",
+              "g": 2.0
+            }
+          ],
+          "sizes": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "family": "ising",
+          "lattice": "ladder",
+          "params": [
+            {
+              "J": 1.0,
+              "g": 0.5
+            },
+            {
+              "J": 1.0,
+              "g": 1.0
+            },
+            {
+              "J": 1.0,
+              "g": 2.0
+            }
+          ],
+          "sizes": [
+            6
+          ]
+        },
+        {
+          "family": "ising",
+          "lattice": "complete",
+          "params": [
+            {
+              "J": 1.0,
+              "g": 0.5
+            },
+            {
+              "J": 1.0,
+              "g": 1.0
+            },
+            {
+              "J": 1.0,
+              "g": 2.0
+            },
+            {
+              "J": -1.0,
+              "g": 0.5
+            },
+            {
+              "J": -1.0,
+              "g": 1.0
+            },
+            {
+              "J": -1.0,
+              "g": 2.0
+            }
+          ],
+          "sizes": [
+            4,
+            5
+          ]
+        },
+        {
+          "family": "ising",
+          "lattice": "star",
+          "params": [
+            {
+              "J": 1.0,
+              "g": 0.5
+            },
+            {
+              "J": 1.0,
+              "g": 1.0
+            },
+            {
+              "J": 1.0,
+              "g": 2.0
+            },
+            {
+              "J": 1.0,
+              "deep_at": "last",
+              "g": 0.5
+            },
+            {
+              "J": 1.0,
+              "deep_at": "last",
+              "g": 1.0
+            },
+            {
+              "J": 1.0,
+              "deep_at": "last",
+              "g": 2.0
+            }
+          ],
+          "sizes": [
+            4,
+            5
+          ]
+        },
+        {
+          "family": "xxz",
+          "lattice": "ring",
+          "params": [
+            {
+              "J": 1.0,
+              "delta": -0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "delta": 0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "delta": 1.5,
+              "h": 0.2
+            }
+          ],
+          "sizes": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "family": "xxz",
+          "lattice": "chain",
+          "params": [
+            {
+              "J": 1.0,
+              "deep_at": null,
+              "delta": -0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": "middle",
+              "delta": -0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": null,
+              "delta": 0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": "middle",
+              "delta": 0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": null,
+              "delta": 1.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": "middle",
+              "delta": 1.5,
+              "h": 0.2
+            }
+          ],
+          "sizes": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "family": "xxz",
+          "lattice": "star",
+          "params": [
+            {
+              "J": 1.0,
+              "deep_at": null,
+              "delta": -0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": "last",
+              "delta": -0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": null,
+              "delta": 0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": "last",
+              "delta": 0.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": null,
+              "delta": 1.5,
+              "h": 0.2
+            },
+            {
+              "J": 1.0,
+              "deep_at": "last",
+              "delta": 1.5,
+              "h": 0.2
+            }
+          ],
+          "sizes": [
+            4,
+            5
+          ]
+        },
+        {
+          "family": "random",
+          "lattice": "random",
+          "params": [
+            {
+              "seed": 0
+            },
+            {
+              "seed": 1
+            },
+            {
+              "seed": 2
+            }
+          ],
+          "sizes": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "ring": {
+        "cells": 6,
+        "depths": [
+          0.0,
+          0.2,
+          1.0
+        ]
+      }
+    },
+    "golden_sha256": "aeef9e6f5c3affd6512b4126bf467b10060eeb1c73ba637e613a74105666ad16",
+    "grade": "survey",
+    "machine": {
+      "cpus": 28,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "python": "3.14.7",
+      "workers": 1
+    },
+    "seconds": 45.418
+  },
+  "models": [
+    {
+      "at": 3,
+      "curvature": -0.08493649053890343,
+      "fails": null,
+      "gap": 0.028766498834762233,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.9923156457934965e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.01997624281437016,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.08333333333295387,
+      "fails": null,
+      "gap": 0.17863279495408224,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.3533886233929593e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.0017126554540844996,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.022758664047552633,
+      "fails": null,
+      "gap": 0.7241996643361905,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.1568032160246275e-07,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.0032525277856570445,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.07774870263086298,
+      "fails": null,
+      "gap": 0.008872608159981032,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 0.0,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "spread": 0.0021585329901738226,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.06565809680285328,
+      "fails": null,
+      "gap": 0.09945618368983,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.852725332682439e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "spread": 0.0017140364242465012,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.006129349324481739,
+      "fails": null,
+      "gap": 0.5177452163199623,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.67019414251979e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "spread": 0.004456127350196792,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.06008028419941403,
+      "fails": null,
+      "gap": 0.0030804902908982967,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.687029209193838e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.0021183201749949143,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.04655581462495957,
+      "fails": null,
+      "gap": 0.06335377612981419,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.52386353219947e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.0016088982860257284,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.002142586861726301,
+      "fails": null,
+      "gap": 0.40616098058179584,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.564753393523688e-07,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.006611954956426913,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.49279484575186255,
+      "fails": null,
+      "gap": 0.21525043702152996,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.2512925685068694e-10,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.0004349838761242286,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.11602540378109356,
+      "fails": null,
+      "gap": 0.4880338717088861,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.572224098277957e-09,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.0010442511931123,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.020463260512776662,
+      "fails": null,
+      "gap": 1.0971675407095642,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.747008901048957e-08,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.002764754319027618,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.10078642701773378,
+      "fails": null,
+      "gap": 0.9629926199153305,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.8553359298564122,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.8783780376364279,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.12315466443621684,
+      "fails": null,
+      "gap": 0.6289456336465793,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.2700246246471961,
+      "fails": null,
+      "gap": 0.9959774156869403,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.3416592154583413,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": -0.07774870263086493,
+      "fails": null,
+      "gap": 0.008872608159981477,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.1102230246251565e-15,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "spread": 0.002158532331086316,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.06565809680284362,
+      "fails": null,
+      "gap": 0.09945618368982911,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.851146817586027e-09,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "spread": 0.001714025739140479,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.006129349324482374,
+      "fails": null,
+      "gap": 0.5177452163199616,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.6708333201195273e-08,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "spread": 0.004456225514392342,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.062255534801733396,
+      "fails": null,
+      "gap": 0.9561869397489264,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.05485291699743343,
+      "fails": null,
+      "gap": 0.49675861837210533,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": -0.21208400843586364,
+      "fails": null,
+      "gap": 0.8072723709038424,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.17641329585802526,
+      "fails": null,
+      "gap": 0.41676848462672367,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": -0.23287975939873495,
+      "fails": null,
+      "gap": 0.7730370151707284,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.2960634928672982,
+      "fails": null,
+      "gap": 0.21055841688203403,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 5,
+      "curvature": -0.23059911152380322,
+      "fails": null,
+      "gap": 0.0625457149298938,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 5.734610675212082e-09,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.001474038166489805,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.10580445001447364,
+      "fails": null,
+      "gap": 0.18385981934655282,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.079336228343891e-09,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.0021602524962302805,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.023473696307521993,
+      "fails": null,
+      "gap": 0.5250914297103957,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.750850627985528e-09,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.004763952451025122,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.03807592445089493,
+      "fails": null,
+      "gap": 0.8934347033385787,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": -0.036095412365345476,
+      "fails": null,
+      "gap": 0.2800470241161639,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": -0.13984323466498336,
+      "fails": null,
+      "gap": 0.716225081005464,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.43935439187414727,
+      "fails": null,
+      "gap": 0.24656584404282622,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": -0.17851026668240952,
+      "fails": null,
+      "gap": 0.6322909313254976,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.8767121369356373,
+      "fails": null,
+      "gap": 0.12896204775408915,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "h": 0.5,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.92785048719935e-09,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 1.0000000000902929,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 5.664253732717839e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 4.0684744517793803e-07,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.924663553675714e-08,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 1.0000000003057392,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.0853683729550312e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 7.977155862537444e-07,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -9.104406981451641e-16,
+      "fails": "flat",
+      "gap": 3.981528347463126e-06,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 0.9999999991005284,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.5222047916884094e-07,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 3.0066798066830103e-06,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.92785048719935e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 1.0000000000902929,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.266590636348155e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 0.9999999992127416,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.924663553675714e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 1.0000000003057392,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.9171449761046233e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 0.9999999995854719,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -9.104406981451641e-16,
+      "fails": "flat",
+      "gap": 3.981528347463126e-06,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 0.9999999991005284,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.3899093948287486e-07,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 0.9999999991530767,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.9638679571443163e-09,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 1.000000003444371,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.548430272890755e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 4.019026115242852e-07,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.769407192459994e-08,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 0.9999999998450075,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.140866655648722e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 1.0894825194229796e-06,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -9.41421124726663e-15,
+      "fails": "flat",
+      "gap": 1.213994301085819e-06,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 1.0000000017918567,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 9.855117877322073e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 2.362523424280796e-06,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.9638679571443163e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 1.000000003444371,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.820018663030055e-10,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 1.000000001275689,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.769407192459994e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 0.9999999998450075,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.6333632668619202e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 1.0000000018668698,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -9.41421124726663e-15,
+      "fails": "flat",
+      "gap": 1.213994301085819e-06,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 1.0000000017918567,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.346608501431092e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 0.9999999933205395,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.047972819634424e-10,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 1.000000000721993,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.666488333057941e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 4.561592376051138e-07,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.2193184240061328e-09,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 1.0000000001052296,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.351978307084778e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 7.860104441759219e-07,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 8.390654349099691e-08,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 0.9999999910582096,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 9.645694065696375e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 2.8297637613139415e-06,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.047972819634424e-10,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 1.000000000721993,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.125192494733085e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 1.000000004668379,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.2193184240061328e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 1.0000000001052296,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.4355674426980158e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 0.9999999999241155,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 8.390654349099691e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 0.9999999910582096,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.166751592180276e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 1.0000000049623277,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.661338147750939e-16,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ladder",
+        "size": 6
+      },
+      "spread": 0.5010141817099167,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.3915917307372183e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "ladder",
+        "size": 6
+      },
+      "spread": 0.0020870054654619774,
+      "unique": false
+    },
+    {
+      "at": 6,
+      "curvature": -0.0008709105565412574,
+      "fails": null,
+      "gap": 0.0009492832820063857,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ladder",
+        "size": 6
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.441825269234755e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ladder",
+        "size": 6
+      },
+      "spread": 0.0017863523989694596,
+      "unique": false
+    },
+    {
+      "at": 6,
+      "curvature": -0.00047902080822223044,
+      "fails": null,
+      "gap": 0.04201236727990931,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ladder",
+        "size": 6
+      },
+      "unique": true
+    },
+    {
+      "at": 5,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 5.740962372158265e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "ladder",
+        "size": 6
+      },
+      "spread": 0.002932835059193395,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.12648860576313334,
+      "fails": null,
+      "gap": 0.0024956837836522805,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "complete",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 9.3724183969357e-10,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "complete",
+        "size": 4
+      },
+      "spread": 0.0023280170162067737,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.30093040327794585,
+      "fails": null,
+      "gap": 0.03475284276850976,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "complete",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.2692257245205951e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "complete",
+        "size": 4
+      },
+      "spread": 0.001420249465196477,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.17399157903707915,
+      "fails": null,
+      "gap": 0.3073135020972626,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "complete",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.3377299207538726e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "complete",
+        "size": 4
+      },
+      "spread": 0.001423784540688755,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.22228317754280325,
+      "fails": null,
+      "gap": 0.15351507407432652,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "complete",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.524082526849213e-09,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "complete",
+        "size": 4
+      },
+      "spread": 0.0009043888946382861,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.13426373661128504,
+      "fails": null,
+      "gap": 0.3771236672595525,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "complete",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 9.486055940755023e-09,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "complete",
+        "size": 4
+      },
+      "spread": 0.001298740960028466,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.043592990099491344,
+      "fails": null,
+      "gap": 0.8428752607332151,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "complete",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.9612254487100245e-08,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "complete",
+        "size": 4
+      },
+      "spread": 0.002428464965834598,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.11850378637285852,
+      "fails": null,
+      "gap": 0.00015833410023313732,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "complete",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 5.2509078862783554e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "complete",
+        "size": 5
+      },
+      "spread": 0.003189321825337349,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.40858867756795963,
+      "fails": null,
+      "gap": 0.004650006927394035,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "complete",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.347011887759436e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "complete",
+        "size": 5
+      },
+      "spread": 0.0013842914949420138,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": -0.622029521757171,
+      "fails": null,
+      "gap": 0.10010311376573444,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "complete",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 8.299142617573807e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "complete",
+        "size": 5
+      },
+      "spread": 0.0010742934985691066,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.5963138708163914,
+      "fails": null,
+      "gap": 0.14032398719878436,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "complete",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.37702446614918e-09,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "complete",
+        "size": 5
+      },
+      "spread": 0.000610033468759541,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.22763082114449273,
+      "fails": null,
+      "gap": 0.31432342959280535,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "complete",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.275472321677796e-08,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "complete",
+        "size": 5
+      },
+      "spread": 0.001138615667459597,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": -0.07625974790835449,
+      "fails": null,
+      "gap": 0.6859944999642846,
+      "spec": {
+        "J": -1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "complete",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.138339747607802e-08,
+      "spec": {
+        "J": -1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "complete",
+        "size": 5
+      },
+      "spread": 0.002139323470276011,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 0.0,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.00000000042588,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.73025635222757e-10,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.0000000026067564,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.0963667791160674e-08,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.0000000060788445,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.5065242386924638e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.0000000058617258,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.6059339247884736e-07,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 0.9999999997329471,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.605697441675602e-08,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.0000000046426205,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 0.0,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.00000000042588,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.406543352430958e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.0000000000357347,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.0963667791160674e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.0000000060788445,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.9196300549140233e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.0000000005578071,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.6059339247884736e-07,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 0.9999999997329471,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.597962406840736e-07,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 1.0000000004268017,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.220446049250313e-16,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 1.0000000005510201,
+      "unique": false
+    },
+    {
+      "at": 5,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.220446049250313e-16,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 1.0000000009900032,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.475440813969442e-08,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 1.0000000024059317,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.2038526559242655e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 1.0000000023505529,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.952268272186757e-08,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 0.999999993695206,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 9.137127054970051e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 0.9999999646433969,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.220446049250313e-16,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 1.0000000005510201,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.841942319837699e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 0.5,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 1.0000000000687526,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.475440813969442e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 1.0000000024059317,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.9329100542364586e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 1.0000000008325916,
+      "unique": false
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.952268272186757e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 0.999999993695206,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.4907862055935084e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "depth": 2.0,
+        "family": "ising",
+        "g": 2.0,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 0.9999999903794692,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": 0.0,
+      "fails": "flat",
+      "gap": 0.10783555427386737,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.43045794068780685,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.4495965539040867e-09,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.0003155677392085443,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.520601422555501e-10,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 1.948129119133668e-07,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.145971771978395e-08,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.0003934433478820498,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.1471641414573241e-09,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 1.2923058245739583e-07,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.0101672831552833e-08,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 3
+      },
+      "spread": 0.0003531914801231384,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -0.07919969592636425,
+      "fails": null,
+      "gap": 0.08614066164070255,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": -0.061586259478084486,
+      "fails": null,
+      "gap": 0.045499189163228815,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.09882872344751659,
+      "fails": null,
+      "gap": 0.5861405795650585,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.03920848345118791,
+      "fails": null,
+      "gap": 0.46695942489520714,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.01809223457808141,
+      "fails": null,
+      "gap": 0.8507808970263149,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.14459809542667149,
+      "fails": null,
+      "gap": 0.7432791933552128,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 7.83086784306164e-09,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.00044719588908709307,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.1739738039571491,
+      "fails": null,
+      "gap": 0.02367270198778304,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.797313491953446e-10,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.00035718344856142115,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -1.4417472506482265,
+      "fails": null,
+      "gap": 0.004131635656434485,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.1000889088563781e-09,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.00029695509040289503,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.7900932897395592e-08,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "ring",
+        "size": 5
+      },
+      "spread": 0.0023275114695082977,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.16550748085286626,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.6186153245788546e-10,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 0.0005354439881685158,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.16550748085286626,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.1655074806470882,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.234492518884593,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.0031349259755428793,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.234492518884593,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.23449250859943072,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.2931367006701253,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.7198045815524097e-08,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "spread": 1.5055903281531473e-06,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.2931367006701253,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.19022533052987534,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.0009170157169740567,
+      "fails": null,
+      "gap": 0.14064109572109085,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -1.099764856054386,
+      "fails": null,
+      "gap": 0.000708340123758977,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.0009170157169740567,
+      "fails": null,
+      "gap": 0.14064109572109085,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.17695711281707463,
+      "fails": null,
+      "gap": 0.004786313044342294,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.004324024843307236,
+      "fails": null,
+      "gap": 0.5982335047012788,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.7585379374907006e-07,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 0.000970465764371764,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -0.004324024843307236,
+      "fails": null,
+      "gap": 0.5982335047012788,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.00608960963285976,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.005036890559222712,
+      "fails": null,
+      "gap": 0.9526327803444786,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 9.191646110906504e-08,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "spread": 0.0008812844045189561,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.005036890559222712,
+      "fails": null,
+      "gap": 0.9526327803444786,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -3.3930353082276916,
+      "fails": null,
+      "gap": 0.020906294916688495,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.055372961630790765,
+      "fails": null,
+      "gap": 0.029355933667019385,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 9.596200722938875e-09,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 0.0006131772319687423,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -0.055372961630790765,
+      "fails": null,
+      "gap": 0.029355933667019385,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 4,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.98923205580104e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 0.3324240049544437,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -2.0656913336826426,
+      "fails": null,
+      "gap": 0.14625879046067203,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.5754246166912315,
+      "fails": null,
+      "gap": 0.0002141171536804709,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -2.0656913336826426,
+      "fails": null,
+      "gap": 0.14625879046067203,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.0009476559059783674,
+      "fails": null,
+      "gap": 0.0031317843886453645,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -3.0960515228313166,
+      "fails": null,
+      "gap": 0.21291196817632319,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.8227659199540085e-08,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 3.4140111318303745e-05,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -3.0960515228313166,
+      "fails": null,
+      "gap": 0.21291196817632319,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.2171265550975363e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "middle",
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "chain",
+        "size": 5
+      },
+      "spread": 1.0000000007795522,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -0.2499294651340499,
+      "fails": null,
+      "gap": 0.04928815238557949,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.2499106937472902,
+      "fails": null,
+      "gap": 0.04928815279641996,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.2499294651340499,
+      "fails": null,
+      "gap": 0.04928815238557949,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.1501933001342195e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 0.0015613682811763119,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.08605968167127143,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -1.7333534679069729,
+      "fails": null,
+      "gap": 0.08605967727794095,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.08605968167127143,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 6.5653087411021716e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 0.0005183160867503478,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.27231903176189387,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.2723190191642699,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.27231903176189387,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.259199360921116e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 4
+      },
+      "spread": 0.0004186446767697194,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -0.3234543346604783,
+      "fails": null,
+      "gap": 0.0060617128636129,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.32345767411431636,
+      "fails": null,
+      "gap": 0.006061712842384881,
+      "spec": {
+        "J": 1.0,
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -0.3234543346604783,
+      "fails": null,
+      "gap": 0.0060617128636129,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": -0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.0238546677143745e-09,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": -0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 0.0014595897361502908,
+      "unique": false
+    },
+    {
+      "at": 3,
+      "curvature": -1.9225451052782727,
+      "fails": null,
+      "gap": 0.030919275390269507,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -1.9225471127815013,
+      "fails": null,
+      "gap": 0.030919275099512644,
+      "spec": {
+        "J": 1.0,
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 3,
+      "curvature": -1.9225451052782727,
+      "fails": null,
+      "gap": 0.030919275390269507,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": 0.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 4.791859131714205e-10,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": 0.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 0.0005551741075225936,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -1.8090148562044115,
+      "fails": null,
+      "gap": 0.23385299527976833,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -1.8090181488328352,
+      "fails": null,
+      "gap": 0.23385299590179998,
+      "spec": {
+        "J": 1.0,
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -1.8090148562044115,
+      "fails": null,
+      "gap": 0.23385299527976833,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": 1.5,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.508854996501441e-08,
+      "spec": {
+        "J": 1.0,
+        "deep_at": "last",
+        "delta": 1.5,
+        "depth": 2.0,
+        "family": "xxz",
+        "h": 0.2,
+        "lattice": "star",
+        "size": 5
+      },
+      "spread": 0.0005063548275776597,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.14943144920081308,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.1494295705663249,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.23623641017989816,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 1,
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -6.058136425545794,
+      "fails": null,
+      "gap": 0.15528223346404701,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 1,
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 3.680048221710308e-08,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 2,
+        "size": 3
+      },
+      "spread": 1.3274462651313712e-07,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -26.079319282356742,
+      "fails": null,
+      "gap": 0.1435852273112257,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 2,
+        "size": 3
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.09920500261075738,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -5.722210733321984,
+      "fails": null,
+      "gap": 0.09921995796874739,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -0.9886646849790208,
+      "fails": null,
+      "gap": 0.23634148228549257,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 1,
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -5.632261853085091,
+      "fails": null,
+      "gap": 0.21602322350656888,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 1,
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 1.8904082743631534e-09,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 2,
+        "size": 4
+      },
+      "spread": 4.2323492232204783e-07,
+      "unique": false
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": null,
+      "gap": 0.03419365274079267,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 2,
+        "size": 4
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -4.69143420505006,
+      "fails": null,
+      "gap": 0.0775200777752183,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 5.929342350441402e-09,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 5
+      },
+      "spread": 0.0003124099777563616,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -12.117172599419957,
+      "fails": null,
+      "gap": 0.0998407141390194,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 1,
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 2,
+      "curvature": -7.036874666668838,
+      "fails": null,
+      "gap": 0.1003114317706677,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 1,
+        "size": 5
+      },
+      "unique": true
+    },
+    {
+      "at": 1,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 2.4115784924561012e-09,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 2,
+        "size": 5
+      },
+      "spread": 9.830199532157025e-08,
+      "unique": false
+    },
+    {
+      "at": 2,
+      "curvature": -5.85611878281235,
+      "fails": null,
+      "gap": 0.005969428915691299,
+      "spec": {
+        "depth": 2.0,
+        "family": "random",
+        "lattice": "random",
+        "seed": 2,
+        "size": 5
+      },
+      "unique": true
+    }
+  ],
+  "rings": [
+    {
+      "at": 6,
+      "curvature": -0.03323782563185414,
+      "fails": null,
+      "gap": 0.04388416586246424,
+      "spec": {
+        "J": 1.0,
+        "depth": 0.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 6
+      },
+      "unique": true
+    },
+    {
+      "at": 6,
+      "curvature": -0.09764553574156569,
+      "fails": null,
+      "gap": 0.01262776404475563,
+      "spec": {
+        "J": 1.0,
+        "depth": 0.2,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 6
+      },
+      "unique": true
+    },
+    {
+      "at": 5,
+      "curvature": null,
+      "fails": "lowest level not single",
+      "gap": 5.049741735874136e-09,
+      "spec": {
+        "J": 1.0,
+        "depth": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 6
+      },
+      "spread": 0.001768447089763897,
+      "unique": false
+    }
+  ],
+  "summary": {
+    "fails": {
+      "flat": 5,
+      "lowest level not single": 117
+    },
+    "models": 240,
+    "narrow": 67,
+    "unique": 118,
+    "wide": 55
+  }
+}

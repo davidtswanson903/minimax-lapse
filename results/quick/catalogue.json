@@ -1,0 +1,172 @@
+{
+  "_provenance": {
+    "config": {
+      "deep": 2.0,
+      "models": [
+        {
+          "family": "ising",
+          "lattice": "ring",
+          "params": [
+            {
+              "J": 1.0,
+              "g": 1.0
+            }
+          ],
+          "sizes": [
+            3,
+            4
+          ]
+        },
+        {
+          "family": "random",
+          "lattice": "random",
+          "params": [
+            {
+              "seed": 0
+            }
+          ],
+          "sizes": [
+            4
+          ]
+        }
+      ],
+      "shift": 0.001
+    },
+    "golden_sha256": "649c936416dff7839592a709b2d660f7f6b7b7845a3e2318bfa323c0234d2563",
+    "grade": "quick",
+    "machine": {
+      "cpus": 28,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "python": "3.14.7",
+      "workers": 1
+    },
+    "seconds": 0.192
+  },
+  "models": [
+    {
+      "above": 0.0,
+      "backward": 0.32932506425353836,
+      "below": 0,
+      "below_weight_max": 0.0,
+      "constraint": 9.041408282575454e-09,
+      "deep_margin": 0.5415007875507252,
+      "deep_weight": 3.25350355803693e-09,
+      "dropped": true,
+      "forbids": true,
+      "forward": 0.3373274166356133,
+      "gap": 8.969187170748683e-09,
+      "level": -1.3333333242940457,
+      "normalization": 0.0,
+      "programs": true,
+      "rates": true,
+      "rss_mb": null,
+      "seconds": 0.029552221298217773,
+      "slackness": 3.122799574512003e-09,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 3
+      },
+      "uniform": true,
+      "weighted": true,
+      "weights": [
+        0.333333333336296,
+        0.3333333333364445,
+        0.33333333332725945
+      ]
+    },
+    {
+      "above": 0.0,
+      "backward": 0.24592917904220357,
+      "below": 0,
+      "below_weight_max": 0.0,
+      "constraint": 5.718157396071132e-10,
+      "deep_margin": 0.6562763676450207,
+      "deep_weight": 1.1769764771080645e-09,
+      "dropped": true,
+      "forbids": true,
+      "forward": 0.2541049177999799,
+      "gap": 5.097742228343805e-10,
+      "level": -1.3065629643272174,
+      "normalization": 0.0,
+      "programs": true,
+      "rates": true,
+      "rss_mb": null,
+      "seconds": 0.05135321617126465,
+      "slackness": 2.364763385110419e-10,
+      "spec": {
+        "J": 1.0,
+        "family": "ising",
+        "g": 1.0,
+        "lattice": "ring",
+        "size": 4
+      },
+      "uniform": true,
+      "weighted": true,
+      "weights": [
+        0.24999999999995667,
+        0.24999999999985328,
+        0.2500000000001273,
+        0.2500000000000628
+      ]
+    },
+    {
+      "above": 3.514426527573278e-10,
+      "backward": 7.738476526242266e-08,
+      "below": 1,
+      "below_weight_max": 7.201547859879055e-11,
+      "constraint": 3.155160415351215e-05,
+      "deep_margin": 1.0131631160342829,
+      "deep_weight": 0.0,
+      "dropped": true,
+      "forbids": true,
+      "forward": 4.5709214191447245e-08,
+      "gap": 1.2905219115566524e-09,
+      "level": -1.7882593036427543,
+      "normalization": 2.220446049250313e-16,
+      "programs": true,
+      "rates": true,
+      "rss_mb": null,
+      "seconds": 0.11102414131164551,
+      "slackness": 2.728385115608949e-09,
+      "spec": {
+        "family": "random",
+        "lattice": "random",
+        "seed": 0,
+        "size": 4
+      },
+      "uniform": null,
+      "weighted": false,
+      "weights": [
+        7.201547859879055e-11,
+        0.17105622222315237,
+        0.7786178587020881,
+        0.0503259190027439
+      ]
+    }
+  ],
+  "summary": {
+    "below_places": 1,
+    "dropped": 3,
+    "families": 2,
+    "forbids": 3,
+    "largest": 4,
+    "lattices": 2,
+    "models": 3,
+    "programs": 3,
+    "rates": 3,
+    "uniform": 2,
+    "uniform_checked": 2,
+    "worst": {
+      "above": 3.514426527573278e-10,
+      "below_weight_max": 7.201547859879055e-11,
+      "constraint": 3.155160415351215e-05,
+      "gap": 8.969187170748683e-09,
+      "normalization": 2.220446049250313e-16,
+      "slackness": 3.122799574512003e-09
+    }
+  }
+}

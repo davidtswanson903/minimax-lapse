@@ -1,0 +1,7 @@
+# Text files are stored and checked out with LF line endings on every platform, so a checkout on a machine that
+# converts line endings (Git for Windows does by default) leaves the tree as committed.
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.zip binary
+*.gz binary

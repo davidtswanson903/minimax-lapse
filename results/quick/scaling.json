@@ -1,0 +1,160 @@
+{
+  "_provenance": {
+    "config": {
+      "anisotropies": [
+        0.5,
+        1.5
+      ],
+      "deep": 2.0,
+      "ising_sizes": [
+        3,
+        4
+      ],
+      "xxz_depths": [
+        0.0,
+        1.0,
+        2.0
+      ],
+      "xxz_fields": [
+        0.1,
+        0.2
+      ],
+      "xxz_sizes": [
+        3,
+        4
+      ]
+    },
+    "golden_sha256": "372c5ecf5063c7746b90fafea4709e79909c93c7b6fe80d29aed9f3fa8b84690",
+    "grade": "quick",
+    "machine": {
+      "cpus": 28,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "python": "3.14.7",
+      "workers": 1
+    },
+    "seconds": 0.236
+  },
+  "fields": [
+    {
+      "cells": 4,
+      "field": 0.1,
+      "other": 0.03281311209845632,
+      "predicted": 0.03281772035310007,
+      "product": 0.031213274092621337
+    },
+    {
+      "cells": 4,
+      "field": 0.2,
+      "other": 0.06470562577324293,
+      "predicted": 0.06469278949587488,
+      "product": 0.058831226802712286
+    }
+  ],
+  "ising": [
+    {
+      "cells": 3,
+      "coarse": 0.2396231813294758,
+      "depth": 0.23978903431102605
+    },
+    {
+      "cells": 4,
+      "coarse": 0.27266260504755824,
+      "depth": 0.2728526715734749
+    }
+  ],
+  "odd": [
+    {
+      "cells": 3,
+      "delta": 0.5,
+      "lift": 8.904466053394344e-10,
+      "pair": {
+        "depth": 1.050000005659846,
+        "others": -1.250000004637958,
+        "share": [
+          0.0,
+          1.0
+        ],
+        "spin": [
+          -0.9999999985927628,
+          0.9999999977832058
+        ]
+      },
+      "product": 1.4316753068679905e-08
+    },
+    {
+      "cells": 3,
+      "delta": 1.5,
+      "lift": -2.5742066256384533e-09,
+      "pair": {
+        "depth": 1.5499999975252263,
+        "others": -1.7499999975714828,
+        "share": [
+          0.0,
+          1.0
+        ],
+        "spin": [
+          -0.9999999994044456,
+          0.9999999992390289
+        ]
+      },
+      "product": 4.60748881461226e-09
+    }
+  ],
+  "xxz": [
+    {
+      "cells": 3,
+      "curve": [
+        {
+          "depth": 0.0,
+          "dropped": false,
+          "margin": 6.335509894483948e-10,
+          "weight": 0.33333333329722675
+        },
+        {
+          "depth": 1.0,
+          "dropped": false,
+          "margin": -7.396294687822547e-10,
+          "weight": 0.48566721400514345
+        },
+        {
+          "depth": 2.0,
+          "dropped": true,
+          "margin": 0.4401356015122764,
+          "weight": 7.158376534339953e-09
+        }
+      ],
+      "dropped": true,
+      "exact": 1.04999999197887,
+      "margin": 0.4401356015122764,
+      "weight": 7.158376534339953e-09
+    },
+    {
+      "cells": 4,
+      "curve": [
+        {
+          "depth": 0.0,
+          "dropped": false,
+          "margin": 2.206170135465868e-09,
+          "weight": 0.25010758668361716
+        },
+        {
+          "depth": 1.0,
+          "dropped": false,
+          "margin": 4.8302326582927435e-09,
+          "weight": 0.052639490656537336
+        },
+        {
+          "depth": 2.0,
+          "dropped": false,
+          "margin": 3.519011482211454e-08,
+          "weight": 0.029415613401356143
+        }
+      ],
+      "dropped": false,
+      "exact": null,
+      "margin": 3.519011482211454e-08,
+      "weight": 0.029415613401356143
+    }
+  ]
+}

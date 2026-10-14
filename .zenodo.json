@@ -1,0 +1,316 @@
+{
+  "title": "minimax-lapse: in a closed quantum system, the minimax of local energy densities fixes a lapse",
+  "description": "How low can a closed quantum system hold the energy at every place at once, and when no clock outside it fixes a lapse, what does? The least achievable maximum of a closed quantum system's local energy densities equals the greatest lowest eigenvalue of its Hamiltonian reweighted by place, and the weights attaining it vanish wherever a place's density falls short of that value. In symbols, e^* = min_ρ max_x Tr(ρ D_x) = max_(N∈Δ) λ_(min)(Σ_x N_x D_x), a case of the minimax theorem, with D_x the density at place x, N a weighting. Like the lapse of canonical gravity, which a slicing condition fixes, these weights are fixed by a rule for dividing the energy among the places, one that names no place; once it is applied, the energies fix them. Under a premise stated with them, they hold a static lapse's place: the evolution they weight leaves the optimal state stationary, each weighs its place's energy as a lapse weighs local energy seen from afar, and they vanish wherever a place falls short. A deepened place drops out exactly when the others, optimized without it, hold it at or below their common value, which on a ring of 6 qubits happens at depth 0.295. It stays in on an even ring that conserves magnetization, under stated hypotheses and to first order in a weak field. Every general claim holds in 120 computed models. So one weighting certifies how low every local energy can be held and names the places that hold it up, and the same weighting is a lapse that the energies, once divided among the places, fix by themselves, zero wherever a place falls short. Where a place falls short of the common value, its clock stops.",
+  "creators": [
+    {
+      "name": "Swanson, David T.",
+      "orcid": "0009-0003-0580-6476"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "1.0.4",
+  "keywords": [
+    "local energy density",
+    "local Hamiltonian",
+    "ground state",
+    "closed quantum system",
+    "minimax theorem",
+    "semidefinite programming",
+    "complementary slackness",
+    "shadow price",
+    "lapse function",
+    "canonical gravity"
+  ],
+  "subjects": [
+    {
+      "term": "Quantum Physics (quant-ph)",
+      "identifier": "https://arxiv.org/archive/quant-ph",
+      "scheme": "url"
+    },
+    {
+      "term": "General Relativity and Quantum Cosmology (gr-qc)",
+      "identifier": "https://arxiv.org/archive/gr-qc",
+      "scheme": "url"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1007/BF01448847",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.2140/pjm.1958.8.171",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:gr-qc/0405109",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1603.00943",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:2405.12762",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1007/978-3-0348-0439-4_1",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1137/0114053",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1017/CBO9780511804441",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1287/mnsc.6.4.366",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevD.7.2814",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:gr-qc/0703035",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1016/0370-2693(89)91251-3",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRev.35.904",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevD.27.2885",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1038/s41586-023-06768-0",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1038/s41567-021-01260-w",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRev.106.620",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRev.108.171",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRev.83.1260",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1012.0472",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1707.04455",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1088/0264-9381/11/12/007",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1088/0264-9381/28/7/075007",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.21468/SciPostPhys.2.1.002",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevA.95.013627",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1704.05018",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1137/0609021",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1017/S0962492900002646",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.108.200404",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1088/1367-2630/14/2/023027",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.56.742",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.56.746",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:hep-th/0405152",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1063/1.522898",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1102.0440",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevD.15.2738",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:cond-mat/0212631",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1807.06209",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysicsPhysiqueFizika.1.195",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.23.880",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1007/BF00417500",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.48.291",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1102.0264",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1705.07918",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1804.00749",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1907.05607",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1007/BF01886518",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1090/gsm/047",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1902.04474",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1904.12390",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1912.00033",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:gr-qc/0305080",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1412.7642",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1406.5046",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1038/nature01997",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:quant-ph/0406180",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1902.02357",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1101.3954",
+      "relation": "cites"
+    },
+    {
+      "identifier": "10.1214/aos/1176345462",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1105.4531",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1507.01955",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:quant-ph/0312214",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1309.0816",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1010.1716",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1807.01322",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:hep-th/0403127",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:quant-ph/0307229",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:0903.5082",
+      "relation": "cites"
+    },
+    {
+      "identifier": "arXiv:1606.07422",
+      "relation": "cites"
+    }
+  ]
+}
